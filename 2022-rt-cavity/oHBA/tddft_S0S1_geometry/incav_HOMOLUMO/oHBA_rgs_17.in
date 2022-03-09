@@ -1,0 +1,134 @@
+$molecule
+0 1
+C	-1.295765 1.269138 0.000000
+C	0.030149 0.817529 0.000000
+C	0.298386 -0.576649 0.000000
+C	-0.778075 -1.472383 0.000000
+C	-2.092346 -1.019441 0.000000
+C	-2.340879 0.355824 0.000000
+O	1.017941 1.719389 0.000000
+C	1.670384 -1.058904 0.000000
+O	2.659143 -0.320049 0.000000
+H	-3.361610 0.718467 0.000000
+H	-0.569228 -2.536877 0.000000
+H	-2.913391 -1.724201 0.000000
+H	-1.477214 2.336146 0.000000
+H	1.804131 -2.153693 0.000000
+H	1.871211 1.226006 0.000000
+Gh 1.981048   0.913868   0.000000
+Gh 2.117910   0.692694   0.000000
+Gh 2.366459    0.659685  0.000000
+$end
+
+$rem
+SET_STATE_DERIV = 1
+ee_singlets = true
+sym_ignore = 1
+input_bohr = false
+method = b3lyp
+SCF_ALGORITHM = diis
+MAX_SCF_CYCLES=200
+basis = mixed
+PURECART 1
+SCF_CONVERGENCE = 8
+mem_total = 7000
+neo = true
+NEO_E_CONV = 9
+NEO_EPC = epc172
+NEO_VPP = 0
+$end
+
+$basis
+C 1
+cc-pvdz
+****
+C 2
+cc-pvdz
+****
+C 3
+cc-pvdz
+****
+C 4
+cc-pvdz
+****
+C 5
+cc-pvdz
+****
+C 6
+cc-pvdz
+****
+O 7
+cc-pvdz
+****
+C 8
+cc-pvdz
+****
+O 9
+cc-pvdz
+****
+H 10
+cc-pvdz
+****
+H 11
+cc-pvdz
+****
+H 12
+cc-pvdz
+****
+H 13
+cc-pvdz
+****
+H 14
+cc-pvdz
+****
+H 15
+cc-pvdz
+****
+H 16
+cc-pvdz
+****
+H 17
+cc-pvdz
+****
+H 18
+cc-pvdz
+****
+$end
+
+$neo_basis
+H    15
+S    1    1.000000
+4.0 1.0
+P    1    1.000000
+4.0 1.0
+****
+H    16
+S    1    1.000000
+4.0 1.0
+P    1    1.000000
+4.0 1.0
+****
+H    17
+S    1    1.000000
+4.0 1.0
+P    1    1.000000
+4.0 1.0
+****
+H    18
+S    1    1.000000
+4.0 1.0
+P    1    1.000000
+4.0 1.0
+****
+$end
+
+
+$neo_tdks
+electronic_HOMO2LUMO true
+dt  0.04
+maxiter 20000
+field_type delta
+field_amp 0.000
+in_cavity false 2.01 2 1e-2 100
+rt_thresh 3
+$end

@@ -1,0 +1,88 @@
+$molecule
+0 1
+C 0.0 0.0 -0.5026771429
+N 0.0 0.0 0.6555628571
+H 0.0 0.0 -1.5728771429
+$end
+
+$rem
+sym_ignore = 1
+input_bohr = false
+method = b3lyp
+neo = true
+neo_epc = epc172
+basis = cc-pvdz
+SCF_ALGORITHM = GDM
+thresh = 14
+s2thresh = 12
+SCF_CONVERGENCE = 11
+NEO_N_SCF_CONVERGENCE = 11
+MAX_SCF_CYCLES = 500
+NEO_PURECART = 1111
+NEO_E_CONV = 12
+MEM_TOTAL = 7000
+NEO_VPP = 0
+NEO_BASIS_LIN_DEP_THRESH = 8 
+$end
+
+$neo_basis
+H    3
+S    1    1.000000
+   2.828400 1.0
+S    1    1.000000
+   4.0 1.0
+S    1    1.000000
+   5.6569 1.0
+S    1    1.000000
+   8.0 1.0
+S    1    1.000000
+   11.3137 1.0
+S    1    1.000000
+   16.0 1.0
+S    1    1.000000
+   22.6274 1.0
+S    1    1.000000
+   32.0 1.0
+P    1    1.000000
+   2.828400 1.0
+P    1    1.000000
+   4.0 1.0
+P    1    1.000000
+   5.6569 1.0
+P    1    1.000000
+   8.0 1.0
+P    1    1.000000
+   11.3137 1.0
+P    1    1.000000
+   16.0 1.0
+P    1    1.000000
+   22.6274 1.0
+P    1    1.000000
+   32.0 1.0
+D    1    1.000000
+   2.828400 1.0
+D    1    1.000000
+   4.0 1.0
+D    1    1.000000
+   5.6569 1.0
+D    1    1.000000
+   8.0 1.0
+D    1    1.000000
+   11.3137 1.0
+D    1    1.000000
+   16.0 1.0
+D    1    1.000000
+   22.6274 1.0
+D    1    1.000000
+   32.0 1.0
+****
+$end
+
+$neo_tdks
+dt  0.04
+maxiter 51677
+field_type delta
+field_amp 0.3
+in_cavity true 2.01 2 1e-2 100
+rt_thresh 4
+$end

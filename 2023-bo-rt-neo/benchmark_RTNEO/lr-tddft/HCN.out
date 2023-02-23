@@ -1,0 +1,3170 @@
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.4 (devel), Q-Chem, Inc., Pleasanton, CA (2021)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  B. Alam,  B. Albrecht,  
+ A. Aldossary,  E. Alguire,  J. H. Andersen,  D. Barton,  K. Begam,  A. Behn,  
+ Y. A. Bernard,  E. J. Berquist,  H. Burton,  A. Carreras,  K. Carter-Fenk,  
+ Romit Chakraborty,  A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  
+ S. Dasgupta,  Jia Deng,  M. de Wergifosse,  M. Diedenhofen,  Hainam Do,  
+ S. Ehlert,  Po-Tung Fang,  S. Fatehi,  Qingguo Feng,  T. Friedhoff,  
+ J. Gayvert,  Qinghui Ge,  G. Gidofalvi,  M. Goldey,  J. Gomes,  
+ C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  M. W. D. Hanson-Heine,  
+ P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  M. Hernandez Vera,  
+ M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  Kerwin Hui,  
+ B. C. Huynh,  M. Ivanov,  Hyunjun Ji,  Hanjie Jiang,  B. Kaduk,  S. Kaehler,  
+ K. Khistyaev,  Jaehoon Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  D. Kosenkov,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  
+ K. Kue,  A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  D. Lefrancois,  
+ S. Lehtola,  Rain Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  
+ M. Loipersberger,  A. Luenser,  A. Manjanath,  P. Manohar,  E. Mansoor,  
+ S. F. Manzer,  Shan-Ping Mao,  A. V. Marenich,  T. Markovich,  S. Mason,  
+ S. A. Maurer,  P. F. McLaughlin,  M. F. S. J. Menger,  J.-M. Mewes,  
+ S. A. Mewes,  P. Morgante,  J. W. Mullinax,  K. J. Oosterbaan,  G. Paran,  
+ Alexander C. Paul,  Suranjan K. Paul,  F. Pavosevic,  Zheng Pei,  S. Prager,  
+ E. I. Proynov,  E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  
+ F. Rob,  E. Rossomme,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ N. Sergueev,  S. M. Sharada,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Yu-Chuan Su,  E. J. Sundstrom,  Zhen Tao,  J. Thirman,  T. Tsuchimochi,  
+ N. M. Tubman,  S. P. Veccham,  O. Vydrov,  J. Wenzel,  J. Witte,  A. Yamada,  
+ Kun Yao,  S. Yeganeh,  S. R. Yost,  A. Zech,  Igor Ying Zhang,  Xing Zhang,  
+ Yu Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  N. A. Besley,  
+ K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  S. Coriani,  
+ C. J. Cramer,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  W. A. Goddard III,  S. Grimme,  
+ S. Hammes-Schiffer,  T. Head-Gordon,  W. J. Hehre,  Chao-Ping Hsu,  
+ T.-C. Jagau,  Yousung Jung,  A. Klamt,  Jing Kong,  D. S. Lambrecht,  
+ WanZhen Liang,  N. J. Mayhall,  C. W. McCurdy,  J. B. Neaton,  T. Neudecker,  
+ C. Ochsenfeld,  J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Yihan Shao,  
+ L. V. Slipchenko,  R. P. Steele,  J. E. Subotnik,  A. J. W. Thom,  
+ A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  T. A. Wesolowski,  
+ K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  S. Faraji,  
+ P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Additional authors since Version 5.4.0: 
+ Chandrima Chakravarty,  L. Cunha,  R. Kang,  Yongbin Kim,  S. Kotaru,  
+ Shaozhi Li,  Xiangyuan Li,  F. Matz,  V. Parravicini,  Haisheng Ren,  
+ Hengyuan Shen,  Yingli Su,  Hung-Yi Tsai,  C. Utku,  Fan Wang,  Jeff Yang,  
+ F. Zeller
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  Arup K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+   Please cite Q-Chem as follows:
+  "Software for the frontiers of quantum chemistry:
+   An overview of developments in the Q-Chem 5 package"
+   J. Chem. Phys. 155, 084801 (2021)
+   https://doi.org/10.1063/5.0055522 (open access)
+
+ Q-Chem 5.4.2 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.900.5 (Nocturnal Misbehaviour).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Mon Feb 20 15:53:46 2023  
+
+ Host: c14n02.grace.hpc.yale.internal
+0
+
+     Scratch files written to /home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498//
+ Processing $rem in /home/tl686/project/qchem_dev/qchem-6/config/preferences:
+ Processing $rem in /home/tl686/.qchemrc:
+ Symmetry disabled for mixed basis and EFP jobs.
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+0 1
+N 0.0492158067 0.000 0.000
+C 1.2046693425 0.000 0.000
+H 2.1221148508 0.000 0.000
+$end
+
+$rem
+sym_ignore = 1
+input_bohr = false
+method = b3lyp
+neo = true
+neo_epc = epc172
+SCF_ALGORITHM = gdm
+MEM_TOTAL = 16000
+thresh = 14
+s2thresh = 12
+SCF_CONVERGENCE = 12
+NEO_N_SCF_CONVERGENCE = 12
+NEO_E_CONV = 12
+MAX_SCF_CYCLES = 500
+BASIS = mixed
+NEO_PURECART = 2222
+NEO_VPP = 0
+NEO_BASIS_LIN_DEP_THRESH = 8
+set_roots = 3
+RPA = true
+CIS_triplets = false
+set_conv = 8
+$end
+
+$basis
+N 1
+cc-pvdz
+****
+C 2
+cc-pvdz
+****
+H 3
+cc-pv5z
+****
+$end
+
+$neo_basis
+H    3
+S    1    1.000000
+   5.973 1.0
+S    1    1.000000
+   10.645 1.0
+S    1    1.000000
+   17.943 1.0
+S    1    1.000000
+   28.950 1.0
+P    1    1.000000
+   7.604 1.0
+P    1    1.000000
+   14.701 1.0
+P    1    1.000000
+   23.308 1.0
+D    1    1.000000
+   9.011 1.0
+D    1    1.000000
+   19.787 1.0
+F    1    1.000000
+   10.914 1.0
+F    1    1.000000
+   20.985 1.0
+****
+$end
+
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      N       0.0492158067     0.0000000000     0.0000000000
+    2      C       1.2046693425     0.0000000000     0.0000000000
+    3      H       2.1221148508     0.0000000000     0.0000000000
+ ----------------------------------------------------------------
+ Nuclear Repulsion Energy =          24.48300495 hartrees
+ There are        7 alpha and        7 beta electrons
+ Requested basis set is non-standard
+ There are 27 shells and 83 basis functions
+
+ Total QAlloc Memory Limit  16000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+
+                       Distance Matrix (Angstroms)
+             N (  1)   C (  2)
+   C (  2)  1.155454
+   H (  3)  2.072899  0.917446
+
+ A cutoff of  1.0D-12 yielded    376 shell pairs
+ There are      3634 function pairs (      5340 Cartesian)
+ Smallest overlap matrix eigenvalue = 4.89E-04
+
+ Scale SEOQF with 1.000000e-01/1.000000e+00/1.000000e+00
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =     0.0000000005 hartrees
+ ================ Generating on-the-fly SAD Guess ================
+ Attempting to make child job directory: /home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498//Frg1/
+ Attempting to make child job directory: /home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498//Frg2/
+ Attempting to make child job directory: /home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498//Frg3/
+ Creating input file /home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498/Frg1.input
+ using default PutDataFrgm: nothing
+ calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498/ 
+ Spawning Job For Fragment 0
+ Done Job For Fragment 0
+ calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch 
+ calling putenv with: QCTHREADS=4 
+ Creating input file /home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498/Frg2.input
+ using default PutDataFrgm: nothing
+ calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498/ 
+ Spawning Job For Fragment 1
+ Done Job For Fragment 1
+ calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch 
+ calling putenv with: QCTHREADS=4 
+ Creating input file /home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498/Frg3.input
+ using default PutDataFrgm: nothing
+ calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch/qchem2498/ 
+ Spawning Job For Fragment 2
+ Done Job For Fragment 2
+ calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch 
+ calling putenv with: QCTHREADS=4 
+ Time for running child jobs:  CPU 0.01 s  wall 16.48 s
+ ============= Method Specific SAD Guess Constructed =============
+ Guess from on-the-fly superposition of atomic densities
+ Warning: Energy on first SCF cycle will be non-variational
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using SG-1 standard quadrature grid
+ using 4 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted SCF calculation will be
+ performed using Roothaan-Hall, GDM
+ SCF converges when RMS gradient is below 1.0e-12
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1     -93.6281995592      5.27e-02  Roothaan Step
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1     -93.3891237723      1.34e-01   Normal BFGS step
+    2     -93.3205405531      3.04e-01  Line search: overstep
+    3     -93.4113744358      4.22e-02   Normal BFGS step
+    4     -93.4120580317      4.16e-02   Normal BFGS step
+    5     -93.4168444408      2.10e-03   Normal BFGS step
+    6     -93.4168515699      3.13e-04   Normal BFGS step
+    7     -93.4168518574      2.48e-05   Normal BFGS step
+    8     -93.4168518586      5.10e-06   Normal BFGS step
+    9     -93.4168518587      1.95e-07   Normal BFGS step
+   10     -93.4168518587      2.20e-07   Normal BFGS step
+   11     -93.4168518587      9.12e-08   Normal BFGS step
+   12     -93.4168518587      1.10e-08   Normal BFGS step
+   13     -93.4168518587      1.84e-09   Normal BFGS step
+   14     -93.4168518587      7.72e-10   Normal BFGS step
+   15     -93.4168518587      3.32e-10   Normal BFGS step
+   16     -93.4168518587      2.63e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.56e-09
+   17     -93.4168518587      6.19e-12   Normal BFGS step
+   18     -93.4168518587      2.02e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.56e-09
+   19     -93.4168518587      8.90e-13  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 11.09s  wall 6.00s 
+ SCF   energy in the final basis set =      -93.4168518587
+ Total energy in the final basis set =      -93.4168518587
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ This NEO calculation is using proton isotope
+ Electronic basis set linear dependency threshold: 10E-6.0000000000
+ Nuclear basis set linear dependency threshold: 10E-8.0000000000
+ 2 particle integral threshold: 10E-12
+ Requested basis set is non-standard
+ There are 11 shells and 37 basis functions
+ NEO centers: 3 
+ There are 1 number of quantum nuclei
+ Number of electronic ao: 83  Number of electronic mo83
+ Number of nuclear ao: 45  Number of nuclear mo45
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using SG-1 standard quadrature grid
+ Grid/integral threshold: 10E-14
+ Read electronic density from eSCF
+ NEO-SCF calculation will be performed using Roothaan-Hall, GDM
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1      18.2539355323      6.98e-02   Normal BFGS step
+    2      18.2527005564      3.40e-02   Normal BFGS step
+    3      18.2525740812      2.37e-02   Normal BFGS step
+    4      18.2522994131      2.26e-02   Normal BFGS step
+    5      18.2522781412      6.71e-03   Normal BFGS step
+    6      18.2522632330      3.90e-03   Normal BFGS step
+    7      18.2522624652      9.48e-04   Normal BFGS step
+    8      18.2522622903      4.08e-04   Normal BFGS step
+    9      18.2522622895      2.43e-05   Normal BFGS step
+   10      18.2522622894      8.87e-06   Normal BFGS step
+   11      18.2522622894      8.89e-07   Normal BFGS step
+   12      18.2522622894      1.32e-07   Normal BFGS step
+   13      18.2522622894      6.12e-08   Normal BFGS step
+   14      18.2522622894      9.05e-08   Normal BFGS step
+   15      18.2522622894      1.09e-09   Normal BFGS step
+   16      18.2522622894      4.31e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.85e-09
+   17      18.2522622894      8.47e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.85e-09
+   18      18.2522622894      2.51e-11   Normal BFGS step
+   19      18.2522622894      1.04e-11   Normal BFGS step
+   20      18.2522622894      1.28e-12   Normal BFGS step
+   21      18.2522622894      1.32e-13   Normal BFGS step
+   21      18.2522622894      1.32e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4035616949      3.58e-02   Normal BFGS step
+    2     -93.4103316366      9.51e-02  Line search: overstep
+    3     -93.4104879175      9.00e-03   Normal BFGS step
+    4     -93.4105205845      3.00e-03   Normal BFGS step
+    5     -93.4105223209      9.52e-04   Normal BFGS step
+    6     -93.4105224442      1.67e-04   Normal BFGS step
+    7     -93.4105224457      2.07e-05   Normal BFGS step
+    8     -93.4105224458      4.09e-06   Normal BFGS step
+    9     -93.4105224458      1.26e-07   Normal BFGS step
+   10     -93.4105224458      3.80e-08   Normal BFGS step
+   11     -93.4105224458      1.72e-08   Normal BFGS step
+   12     -93.4105224458      2.28e-09   Normal BFGS step
+   13     -93.4105224458      4.90e-10   Normal BFGS step
+   14     -93.4105224458      1.81e-10   Normal BFGS step
+   15     -93.4105224458      5.47e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.76e-09
+   16     -93.4105224458      4.11e-12   Normal BFGS step
+   17     -93.4105224458      3.53e-12   Normal BFGS step
+   18     -93.4105224458      2.07e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.76e-09
+   19     -93.4105224458      1.13e-13   Normal BFGS step
+   19     -93.4105224458      1.13e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 2
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4133465124      1.18e-01   Normal BFGS step
+    2     -93.4154705851      3.91e-02   Normal BFGS step
+    3     -93.4153852127      1.49e-02   Normal BFGS step
+    4     -93.4155654797      3.64e-02  Line search: overstep
+    5     -93.4155851098      3.68e-03   Normal BFGS step
+    6     -93.4155896313      2.49e-03   Normal BFGS step
+    7     -93.4155896862      3.16e-04   Normal BFGS step
+    8     -93.4155897017      1.60e-04   Normal BFGS step
+    9     -93.4155897020      1.85e-05   Normal BFGS step
+   10     -93.4155897021      5.29e-06   Normal BFGS step
+   11     -93.4155897021      3.12e-07   Normal BFGS step
+   12     -93.4155897021      4.88e-08   Normal BFGS step
+   13     -93.4155897021      6.01e-09   Normal BFGS step
+   14     -93.4155897021      7.30e-09   Normal BFGS step
+   15     -93.4155897021      1.20e-09   Normal BFGS step
+   16     -93.4155897021      3.48e-10   Normal BFGS step
+   17     -93.4155897021      1.49e-11   Normal BFGS step
+   18     -93.4155897021      4.41e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 7.66e-09
+   19     -93.4155897021      1.95e-12   Normal BFGS step
+   20     -93.4155897021      4.06e-13   Normal BFGS step
+   20     -93.4155897021      4.06e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4146663775      2.67e-02   Normal BFGS step
+    2     -93.4186153902      7.13e-02  Line search: overstep
+    3     -93.4186957688      5.78e-03   Normal BFGS step
+    4     -93.4187231010      2.42e-03   Normal BFGS step
+    5     -93.4187239955      7.99e-04   Normal BFGS step
+    6     -93.4187240398      1.07e-04   Normal BFGS step
+    7     -93.4187240404      1.12e-05   Normal BFGS step
+    8     -93.4187240404      2.96e-06   Normal BFGS step
+    9     -93.4187240404      7.34e-08   Normal BFGS step
+   10     -93.4187240404      2.22e-08   Normal BFGS step
+   11     -93.4187240404      1.01e-08   Normal BFGS step
+   12     -93.4187240404      1.21e-09   Normal BFGS step
+   13     -93.4187240404      2.46e-10   Normal BFGS step
+   14     -93.4187240404      1.16e-10   Normal BFGS step
+   15     -93.4187240404      4.28e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.50e-09
+   16     -93.4187240404      3.30e-12   Normal BFGS step
+   17     -93.4187240404      3.25e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.50e-09
+   18     -93.4187240404      2.37e-12   Normal BFGS step
+   19     -93.4187240404      7.90e-14   Normal BFGS step
+   19     -93.4187240404      7.90e-14  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 3
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4196970135      9.62e-02   Normal BFGS step
+    2     -93.4206710574      2.58e-02   Normal BFGS step
+    3     -93.4207057210      3.94e-03   Normal BFGS step
+    4     -93.4207152337      2.66e-03   Normal BFGS step
+    5     -93.4205573701      3.53e-03  Line search: understep
+    6     -93.4207246203      2.88e-02  Line search: overstep
+    7     -93.4206220155      4.16e-03  Line search: understep
+    8     -93.4207324271      2.22e-02  Line search: overstep
+    9     -93.4206632761      4.41e-03  Line search: understep
+   10     -93.4207384125      1.72e-02  Line search: overstep
+   11     -93.4206898745      4.29e-03  Line search: understep
+   12     -93.4207426595      1.34e-02  Line search: overstep
+   13     -93.4207072406      3.94e-03  Line search: understep
+   14     -93.4207242314      7.11e-03   Normal BFGS step
+   15     -93.4207510908      4.54e-03   Normal BFGS step
+   16     -93.4178404638      4.87e-03  Line search: understep
+   17     -93.4207676999      1.35e-01  Line search: overstep
+   18     -93.4207603189      9.04e-04   Normal BFGS step
+   19     -93.4207683738      5.42e-03  Line search: overstep
+   20     -93.4207685374      3.59e-04   Normal BFGS step
+   21     -93.4207685775      1.73e-04   Normal BFGS step
+   22     -93.4207685780      1.98e-05   Normal BFGS step
+   23     -93.4207685781      6.81e-06   Normal BFGS step
+   24     -93.4207685781      5.43e-07   Normal BFGS step
+   25     -93.4207685781      1.70e-07   Normal BFGS step
+   26     -93.4207685781      2.74e-08   Normal BFGS step
+   27     -93.4207685781      5.24e-09   Normal BFGS step
+   28     -93.4207685781      1.26e-09   Normal BFGS step
+   29     -93.4207685781      4.14e-10   Normal BFGS step
+   30     -93.4207685781      1.03e-10   Normal BFGS step
+   31     -93.4207685781      9.29e-12   Normal BFGS step
+   32     -93.4207685781      4.59e-12   Normal BFGS step
+   33     -93.4207685781      3.83e-13   Normal BFGS step
+   33     -93.4207685781      3.83e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4203115458      1.50e-02   Normal BFGS step
+    2     -93.4220724678      4.00e-02  Line search: overstep
+    3     -93.4221075541      3.54e-03   Normal BFGS step
+    4     -93.4221211630      1.38e-03   Normal BFGS step
+    5     -93.4221215551      5.51e-04   Normal BFGS step
+    6     -93.4221215734      6.92e-05   Normal BFGS step
+    7     -93.4221215737      6.63e-06   Normal BFGS step
+    8     -93.4221215737      1.54e-06   Normal BFGS step
+    9     -93.4221215737      4.55e-08   Normal BFGS step
+   10     -93.4221215737      9.80e-09   Normal BFGS step
+   11     -93.4221215737      5.38e-09   Normal BFGS step
+   12     -93.4221215737      1.32e-09   Normal BFGS step
+   13     -93.4221215737      2.09e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.40e-09
+   14     -93.4221215737      1.67e-10   Normal BFGS step
+   15     -93.4221215737      2.19e-11   Normal BFGS step
+   16     -93.4221215737      3.93e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.40e-09
+   17     -93.4221215737      3.54e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.40e-09
+   18     -93.4221215737      2.98e-12   Normal BFGS step
+   19     -93.4221215737      5.65e-14   Normal BFGS step
+   19     -93.4221215737      5.65e-14  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 4
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4223900328      8.01e-02   Normal BFGS step
+    2     -93.4230282856      2.37e-02   Normal BFGS step
+    3     -93.4230550462      6.22e-03   Normal BFGS step
+    4     -93.4230575567      1.61e-03   Normal BFGS step
+    5     -93.4230578606      5.75e-04   Normal BFGS step
+    6     -93.4230579857      2.94e-04   Normal BFGS step
+    7     -93.4230579927      6.01e-05   Normal BFGS step
+    8     -93.4230579929      1.54e-05   Normal BFGS step
+    9     -93.4230579929      2.40e-06   Normal BFGS step
+   10     -93.4230579929      7.24e-07   Normal BFGS step
+   11     -93.4230579929      8.54e-08   Normal BFGS step
+   12     -93.4230579929      1.49e-08   Normal BFGS step
+   13     -93.4230579929      4.86e-09   Normal BFGS step
+   14     -93.4230579929      4.97e-10   Normal BFGS step
+   15     -93.4230579929      2.18e-10   Normal BFGS step
+   16     -93.4230579929      2.75e-11   Normal BFGS step
+   17     -93.4230579929      4.83e-12   Normal BFGS step
+   18     -93.4230579929      7.58e-13   Normal BFGS step
+   18     -93.4230579929      7.58e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4228448032      1.02e-02   Normal BFGS step
+    2     -93.4236647274      2.73e-02  Line search: overstep
+    3     -93.4236808975      2.81e-03   Normal BFGS step
+    4     -93.4236874677      9.57e-04   Normal BFGS step
+    5     -93.4236876530      3.83e-04   Normal BFGS step
+    6     -93.4236876615      4.95e-05   Normal BFGS step
+    7     -93.4236876617      4.50e-06   Normal BFGS step
+    8     -93.4236876617      1.29e-06   Normal BFGS step
+    9     -93.4236876617      3.32e-08   Normal BFGS step
+   10     -93.4236876617      6.74e-09   Normal BFGS step
+   11     -93.4236876617      3.13e-09   Normal BFGS step
+   12     -93.4236876617      1.10e-09   Normal BFGS step
+   13     -93.4236876617      1.33e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.50e-09
+   14     -93.4236876617      9.88e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.50e-09
+   15     -93.4236876617      1.10e-11   Normal BFGS step
+   16     -93.4236876617      2.04e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.50e-09
+   17     -93.4236876617      1.34e-12   Normal BFGS step
+   18     -93.4236876617      1.24e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.50e-09
+   19     -93.4236876617      4.58e-14   Normal BFGS step
+   19     -93.4236876617      4.58e-14  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 5
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4236608970      6.52e-02   Normal BFGS step
+    2     -93.4240738866      2.70e-02   Normal BFGS step
+    3     -93.4240972261      5.69e-03   Normal BFGS step
+    4     -93.4240984807      1.05e-03   Normal BFGS step
+    5     -93.4240985058      1.24e-04   Normal BFGS step
+    6     -93.4240985130      5.10e-05   Normal BFGS step
+    7     -93.4240985151      3.66e-05   Normal BFGS step
+    8     -93.4240985154      1.20e-05   Normal BFGS step
+    9     -93.4240985154      4.67e-06   Normal BFGS step
+   10     -93.4240985154      3.40e-07   Normal BFGS step
+   11     -93.4240985154      2.69e-08   Normal BFGS step
+   12     -93.4240985154      6.41e-09   Normal BFGS step
+   13     -93.4240985154      4.00e-09   Normal BFGS step
+   14     -93.4240985154      1.25e-10   Normal BFGS step
+   15     -93.4240985154      1.96e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.15e-09
+   16     -93.4240985154      1.20e-11   Normal BFGS step
+   17     -93.4240985154      6.90e-12   Normal BFGS step
+   18     -93.4240985154      4.00e-13   Normal BFGS step
+   18     -93.4240985154      4.00e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4240084468      5.89e-03   Normal BFGS step
+    2     -93.4243629626      1.57e-02  Line search: overstep
+    3     -93.4243699549      1.79e-03   Normal BFGS step
+    4     -93.4243726482      6.30e-04   Normal BFGS step
+    5     -93.4243727327      2.47e-04   Normal BFGS step
+    6     -93.4243727367      3.27e-05   Normal BFGS step
+    7     -93.4243727368      3.27e-06   Normal BFGS step
+    8     -93.4243727368      6.88e-07   Normal BFGS step
+    9     -93.4243727368      2.29e-08   Normal BFGS step
+   10     -93.4243727368      4.93e-09   Normal BFGS step
+   11     -93.4243727368      2.77e-09   Normal BFGS step
+   12     -93.4243727368      6.10e-10   Normal BFGS step
+   13     -93.4243727368      1.07e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.01e-09
+   14     -93.4243727368      6.42e-11   Normal BFGS step
+   15     -93.4243727368      1.20e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.01e-09
+   16     -93.4243727368      2.06e-12   Normal BFGS step
+   17     -93.4243727368      1.98e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.01e-09
+   18     -93.4243727368      1.51e-12   Normal BFGS step
+   19     -93.4243727368      5.01e-14   Normal BFGS step
+   19     -93.4243727368      5.01e-14  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 6
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4242524477      5.13e-02   Normal BFGS step
+    2     -93.4245430228      2.61e-02   Normal BFGS step
+    3     -93.4245572435      3.97e-03   Normal BFGS step
+    4     -93.4245579183      6.63e-04   Normal BFGS step
+    5     -93.4245579297      7.46e-05   Normal BFGS step
+    6     -93.4245579304      2.61e-05   Normal BFGS step
+    7     -93.4245579304      4.10e-06   Normal BFGS step
+    8     -93.4245579304      1.97e-06   Normal BFGS step
+    9     -93.4245579304      6.43e-07   Normal BFGS step
+   10     -93.4245579304      2.68e-07   Normal BFGS step
+   11     -93.4245579304      2.15e-08   Normal BFGS step
+   12     -93.4245579304      3.45e-09   Normal BFGS step
+   13     -93.4245579304      1.83e-09   Normal BFGS step
+   14     -93.4245579304      3.65e-11   Normal BFGS step
+   15     -93.4245579304      9.55e-12   Normal BFGS step
+   16     -93.4245579304      1.64e-11   Normal BFGS step
+   17     -93.4245579304      7.15e-13   Normal BFGS step
+   17     -93.4245579304      7.15e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4245164137      4.25e-03   Normal BFGS step
+    2     -93.4246794758      1.13e-02  Line search: overstep
+    3     -93.4246826822      1.07e-03   Normal BFGS step
+    4     -93.4246839285      4.37e-04   Normal BFGS step
+    5     -93.4246839679      1.42e-04   Normal BFGS step
+    6     -93.4246839698      2.25e-05   Normal BFGS step
+    7     -93.4246839698      2.34e-06   Normal BFGS step
+    8     -93.4246839698      6.04e-07   Normal BFGS step
+    9     -93.4246839698      1.60e-08   Normal BFGS step
+   10     -93.4246839698      3.28e-09   Normal BFGS step
+   11     -93.4246839698      1.90e-09   Normal BFGS step
+   12     -93.4246839698      4.22e-10   Normal BFGS step
+   13     -93.4246839698      7.37e-11   Normal BFGS step
+   14     -93.4246839698      4.98e-11   Normal BFGS step
+   15     -93.4246839698      8.33e-12   Normal BFGS step
+   16     -93.4246839698      1.43e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.74e-09
+   17     -93.4246839698      1.38e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.74e-09
+   18     -93.4246839698      1.06e-12   Normal BFGS step
+   19     -93.4246839698      3.75e-14   Normal BFGS step
+   19     -93.4246839698      3.75e-14  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 7
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4245691710      3.94e-02   Normal BFGS step
+    2     -93.4247622406      2.17e-02   Normal BFGS step
+    3     -93.4247693980      2.61e-03   Normal BFGS step
+    4     -93.4247698077      5.92e-04   Normal BFGS step
+    5     -93.4247698155      8.41e-05   Normal BFGS step
+    6     -93.4247698171      4.15e-05   Normal BFGS step
+    7     -93.4247698171      7.85e-06   Normal BFGS step
+    8     -93.4247698171      1.21e-06   Normal BFGS step
+    9     -93.4247698171      3.57e-07   Normal BFGS step
+   10     -93.4247698171      1.00e-07   Normal BFGS step
+   11     -93.4247698171      1.44e-08   Normal BFGS step
+   12     -93.4247698171      5.37e-09   Normal BFGS step
+   13     -93.4247698171      1.77e-09   Normal BFGS step
+   14     -93.4247698171      5.61e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.03e-09
+   15     -93.4247698171      1.28e-11   Normal BFGS step
+   16     -93.4247698171      4.62e-12   Normal BFGS step
+   17     -93.4247698171      7.23e-12   Normal BFGS step
+   18     -93.4247698171      1.41e-13   Normal BFGS step
+   18     -93.4247698171      1.41e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4247505817      2.82e-03   Normal BFGS step
+    2     -93.4248262864      7.51e-03  Line search: overstep
+    3     -93.4248277710      8.45e-04   Normal BFGS step
+    4     -93.4248283573      3.07e-04   Normal BFGS step
+    5     -93.4248283757      1.12e-04   Normal BFGS step
+    6     -93.4248283766      1.45e-05   Normal BFGS step
+    7     -93.4248283766      1.46e-06   Normal BFGS step
+    8     -93.4248283766      3.49e-07   Normal BFGS step
+    9     -93.4248283766      1.11e-08   Normal BFGS step
+   10     -93.4248283766      2.27e-09   Normal BFGS step
+   11     -93.4248283766      1.27e-09   Normal BFGS step
+   12     -93.4248283766      2.99e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.22e-09
+   13     -93.4248283766      5.02e-11   Normal BFGS step
+   14     -93.4248283766      3.41e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.27e-09
+   15     -93.4248283766      5.60e-12   Normal BFGS step
+   16     -93.4248283766      9.82e-13   Normal BFGS step
+   16     -93.4248283766      9.82e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 8
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4247473314      2.93e-02   Normal BFGS step
+    2     -93.4248645201      1.29e-02   Normal BFGS step
+    3     -93.4248678465      1.79e-03   Normal BFGS step
+    4     -93.4248680903      4.96e-04   Normal BFGS step
+    5     -93.4248680978      9.92e-05   Normal BFGS step
+    6     -93.4248681005      6.53e-05   Normal BFGS step
+    7     -93.4248681006      5.88e-06   Normal BFGS step
+    8     -93.4248681006      1.46e-06   Normal BFGS step
+    9     -93.4248681006      2.61e-07   Normal BFGS step
+   10     -93.4248681006      4.67e-08   Normal BFGS step
+   11     -93.4248681006      1.06e-08   Normal BFGS step
+   12     -93.4248681006      6.87e-09   Normal BFGS step
+   13     -93.4248681006      1.23e-10   Normal BFGS step
+   14     -93.4248681006      2.40e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.52e-09
+   15     -93.4248681006      6.40e-12   Normal BFGS step
+   16     -93.4248681006      2.22e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.52e-09
+   17     -93.4248681006      4.34e-13   Normal BFGS step
+   17     -93.4248681006      4.34e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4248593128      1.92e-03   Normal BFGS step
+    2     -93.4248940453      5.11e-03  Line search: overstep
+    3     -93.4248947250      5.42e-04   Normal BFGS step
+    4     -93.4248949974      2.60e-04   Normal BFGS step
+    5     -93.4248950059      6.42e-05   Normal BFGS step
+    6     -93.4248950063      8.69e-06   Normal BFGS step
+    7     -93.4248950063      1.09e-06   Normal BFGS step
+    8     -93.4248950063      2.60e-07   Normal BFGS step
+    9     -93.4248950063      7.55e-09   Normal BFGS step
+   10     -93.4248950063      1.50e-09   Normal BFGS step
+   11     -93.4248950063      8.40e-10   Normal BFGS step
+   12     -93.4248950063      2.10e-10   Normal BFGS step
+   13     -93.4248950063      3.38e-11   Normal BFGS step
+   14     -93.4248950063      2.26e-11   Normal BFGS step
+   15     -93.4248950063      3.71e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.68e-09
+   16     -93.4248950063      6.63e-13   Normal BFGS step
+   16     -93.4248950063      6.63e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 9
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4248465854      2.10e-02   Normal BFGS step
+    2     -93.4249114670      1.16e-02   Normal BFGS step
+    3     -93.4249129426      1.14e-03   Normal BFGS step
+    4     -93.4249130838      4.23e-04   Normal BFGS step
+    5     -93.4249130902      8.61e-05   Normal BFGS step
+    6     -93.4249130923      5.95e-05   Normal BFGS step
+    7     -93.4249130923      4.82e-06   Normal BFGS step
+    8     -93.4249130923      1.14e-06   Normal BFGS step
+    9     -93.4249130923      1.08e-07   Normal BFGS step
+   10     -93.4249130923      1.51e-08   Normal BFGS step
+   11     -93.4249130923      4.44e-09   Normal BFGS step
+   12     -93.4249130923      3.32e-09   Normal BFGS step
+   13     -93.4249130923      9.52e-11   Normal BFGS step
+   14     -93.4249130923      1.17e-10   Normal BFGS step
+   15     -93.4249130923      2.11e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.07e-09
+   16     -93.4249130923      6.76e-12   Normal BFGS step
+   17     -93.4249130923      6.21e-13   Normal BFGS step
+   17     -93.4249130923      6.21e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249091508      1.20e-03   Normal BFGS step
+    2     -93.4249247869      3.20e-03  Line search: overstep
+    3     -93.4249250925      3.47e-04   Normal BFGS step
+    4     -93.4249252163      1.79e-04   Normal BFGS step
+    5     -93.4249252202      4.54e-05   Normal BFGS step
+    6     -93.4249252203      6.01e-06   Normal BFGS step
+    7     -93.4249252203      6.84e-07   Normal BFGS step
+    8     -93.4249252203      1.72e-07   Normal BFGS step
+    9     -93.4249252203      5.08e-09   Normal BFGS step
+   10     -93.4249252203      1.00e-09   Normal BFGS step
+   11     -93.4249252203      5.51e-10   Normal BFGS step
+   12     -93.4249252203      1.45e-10   Normal BFGS step
+   13     -93.4249252203      2.24e-11   Normal BFGS step
+   14     -93.4249252203      1.52e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 6.69e-10
+   15     -93.4249252203      2.42e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.00e-09
+   16     -93.4249252203      4.42e-13   Normal BFGS step
+   16     -93.4249252203      4.42e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 10
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4248994005      1.46e-02   Normal BFGS step
+    2     -93.4249325749      8.47e-03   Normal BFGS step
+    3     -93.4249332125      7.23e-04   Normal BFGS step
+    4     -93.4249332903      3.35e-04   Normal BFGS step
+    5     -93.4249332945      6.99e-05   Normal BFGS step
+    6     -93.4249332956      4.45e-05   Normal BFGS step
+    7     -93.4249332956      3.47e-06   Normal BFGS step
+    8     -93.4249332956      7.77e-07   Normal BFGS step
+    9     -93.4249332956      6.13e-08   Normal BFGS step
+   10     -93.4249332956      4.93e-09   Normal BFGS step
+   11     -93.4249332956      9.34e-10   Normal BFGS step
+   12     -93.4249332956      8.64e-10   Normal BFGS step
+   13     -93.4249332956      1.39e-10   Normal BFGS step
+   14     -93.4249332956      1.55e-11   Normal BFGS step
+   15     -93.4249332956      1.55e-11   Normal BFGS step
+   16     -93.4249332956      6.39e-12   Normal BFGS step
+   17     -93.4249332956      1.41e-12   Normal BFGS step
+   18     -93.4249332956      5.26e-13   Normal BFGS step
+   18     -93.4249332956      5.26e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249315588      1.05e-03   Normal BFGS step
+    2     -93.4249384683      2.80e-03  Line search: overstep
+    3     -93.4249386032      2.54e-04   Normal BFGS step
+    4     -93.4249386584      9.49e-05   Normal BFGS step
+    5     -93.4249386601      2.92e-05   Normal BFGS step
+    6     -93.4249386601      4.49e-06   Normal BFGS step
+    7     -93.4249386602      4.93e-07   Normal BFGS step
+    8     -93.4249386602      1.24e-07   Normal BFGS step
+    9     -93.4249386602      3.38e-09   Normal BFGS step
+   10     -93.4249386602      6.75e-10   Normal BFGS step
+   11     -93.4249386602      3.59e-10   Normal BFGS step
+   12     -93.4249386602      9.85e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 9.68e-10
+   13     -93.4249386602      1.47e-11   Normal BFGS step
+   14     -93.4249386602      9.78e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.51e-09
+   15     -93.4249386602      1.55e-12   Normal BFGS step
+   16     -93.4249386602      2.88e-13   Normal BFGS step
+   16     -93.4249386602      2.88e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 11
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249259400      9.88e-03   Normal BFGS step
+    2     -93.4249418886      5.80e-03   Normal BFGS step
+    3     -93.4249421605      4.55e-04   Normal BFGS step
+    4     -93.4249422009      2.49e-04   Normal BFGS step
+    5     -93.4249422031      5.31e-05   Normal BFGS step
+    6     -93.4249422037      3.09e-05   Normal BFGS step
+    7     -93.4249422037      2.37e-06   Normal BFGS step
+    8     -93.4249422037      5.05e-07   Normal BFGS step
+    9     -93.4249422037      4.94e-08   Normal BFGS step
+   10     -93.4249422037      2.70e-09   Normal BFGS step
+   11     -93.4249422037      3.76e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.29e-09
+   12     -93.4249422037      2.23e-10   Normal BFGS step
+   13     -93.4249422037      8.55e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.29e-09
+   14     -93.4249422037      4.01e-12   Normal BFGS step
+   15     -93.4249422037      4.27e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.29e-09
+   16     -93.4249422037      1.52e-12   Normal BFGS step
+   17     -93.4249422037      1.22e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.29e-09
+   18     -93.4249422037      7.49e-14   Normal BFGS step
+   18     -93.4249422037      7.49e-14  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249414493      5.30e-04   Normal BFGS step
+    2     -93.4249444565      1.41e-03  Line search: overstep
+    3     -93.4249445152      1.69e-04   Normal BFGS step
+    4     -93.4249445393      7.27e-05   Normal BFGS step
+    5     -93.4249445400      2.38e-05   Normal BFGS step
+    6     -93.4249445401      2.90e-06   Normal BFGS step
+    7     -93.4249445401      3.24e-07   Normal BFGS step
+    8     -93.4249445401      8.15e-08   Normal BFGS step
+    9     -93.4249445401      2.23e-09   Normal BFGS step
+   10     -93.4249445401      4.37e-10   Normal BFGS step
+   11     -93.4249445401      2.34e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.58e-09
+   12     -93.4249445401      6.60e-11   Normal BFGS step
+   13     -93.4249445401      9.65e-12   Normal BFGS step
+   14     -93.4249445401      6.78e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.58e-09
+   15     -93.4249445401      1.02e-12   Normal BFGS step
+   16     -93.4249445401      1.86e-13   Normal BFGS step
+   16     -93.4249445401      1.86e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 12
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249386036      6.58e-03   Normal BFGS step
+    2     -93.4249459378      3.87e-03   Normal BFGS step
+    3     -93.4249460530      3.09e-04   Normal BFGS step
+    4     -93.4249460728      1.77e-04   Normal BFGS step
+    5     -93.4249460738      3.75e-05   Normal BFGS step
+    6     -93.4249460741      2.08e-05   Normal BFGS step
+    7     -93.4249460741      1.59e-06   Normal BFGS step
+    8     -93.4249460741      3.23e-07   Normal BFGS step
+    9     -93.4249460741      3.56e-08   Normal BFGS step
+   10     -93.4249460741      1.69e-09   Normal BFGS step
+   11     -93.4249460741      1.95e-10   Normal BFGS step
+   12     -93.4249460741      5.20e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.11e-09
+   13     -93.4249460741      3.49e-11   Normal BFGS step
+   14     -93.4249460741      2.81e-12   Normal BFGS step
+   15     -93.4249460741      2.29e-12   Normal BFGS step
+   16     -93.4249460741      6.78e-13   Normal BFGS step
+   16     -93.4249460741      6.78e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249457499      4.62e-04   Normal BFGS step
+    2     -93.4249470440      1.23e-03  Line search: overstep
+    3     -93.4249470692      1.09e-04   Normal BFGS step
+    4     -93.4249470796      5.08e-05   Normal BFGS step
+    5     -93.4249470800      1.45e-05   Normal BFGS step
+    6     -93.4249470800      1.84e-06   Normal BFGS step
+    7     -93.4249470800      2.13e-07   Normal BFGS step
+    8     -93.4249470800      5.23e-08   Normal BFGS step
+    9     -93.4249470800      1.47e-09   Normal BFGS step
+   10     -93.4249470800      2.87e-10   Normal BFGS step
+   11     -93.4249470800      1.52e-10   Normal BFGS step
+   12     -93.4249470800      4.37e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.79e-10
+   13     -93.4249470800      6.29e-12   Normal BFGS step
+   14     -93.4249470800      4.06e-12   Normal BFGS step
+   15     -93.4249470800      6.63e-13   Normal BFGS step
+   15     -93.4249470800      6.63e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 13
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249444082      4.33e-03   Normal BFGS step
+    2     -93.4249476791      2.54e-03   Normal BFGS step
+    3     -93.4249477278      2.08e-04   Normal BFGS step
+    4     -93.4249477370      1.22e-04   Normal BFGS step
+    5     -93.4249477375      2.54e-05   Normal BFGS step
+    6     -93.4249477376      1.37e-05   Normal BFGS step
+    7     -93.4249477376      1.05e-06   Normal BFGS step
+    8     -93.4249477376      2.06e-07   Normal BFGS step
+    9     -93.4249477376      2.44e-08   Normal BFGS step
+   10     -93.4249477376      1.06e-09   Normal BFGS step
+   11     -93.4249477376      1.10e-10   Normal BFGS step
+   12     -93.4249477376      3.10e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.10e-08
+   13     -93.4249477376      5.32e-11   Normal BFGS step
+   14     -93.4249477376      3.17e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.10e-08
+   15     -93.4249477376      2.81e-12   Normal BFGS step
+   16     -93.4249477376      1.37e-13   Normal BFGS step
+   16     -93.4249477376      1.37e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249475993      2.89e-04   Normal BFGS step
+    2     -93.4249481518      7.71e-04  Line search: overstep
+    3     -93.4249481625      7.31e-05   Normal BFGS step
+    4     -93.4249481670      2.75e-05   Normal BFGS step
+    5     -93.4249481671      8.58e-06   Normal BFGS step
+    6     -93.4249481671      1.12e-06   Normal BFGS step
+    7     -93.4249481671      1.23e-07   Normal BFGS step
+    8     -93.4249481671      2.63e-08   Normal BFGS step
+    9     -93.4249481671      9.59e-10   Normal BFGS step
+   10     -93.4249481671      1.88e-10   Normal BFGS step
+   11     -93.4249481671      9.85e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.15e-10
+   12     -93.4249481671      2.87e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.15e-10
+   13     -93.4249481671      4.08e-12   Normal BFGS step
+   14     -93.4249481671      2.65e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.25e-09
+   15     -93.4249481671      4.31e-13   Normal BFGS step
+   15     -93.4249481671      4.31e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 14
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249469932      2.83e-03   Normal BFGS step
+    2     -93.4249484222      1.66e-03   Normal BFGS step
+    3     -93.4249484427      1.39e-04   Normal BFGS step
+    4     -93.4249484468      8.25e-05   Normal BFGS step
+    5     -93.4249484471      1.69e-05   Normal BFGS step
+    6     -93.4249484471      9.01e-06   Normal BFGS step
+    7     -93.4249484471      6.84e-07   Normal BFGS step
+    8     -93.4249484471      1.31e-07   Normal BFGS step
+    9     -93.4249484471      1.62e-08   Normal BFGS step
+   10     -93.4249484471      6.65e-10   Normal BFGS step
+   11     -93.4249484471      6.61e-11   Normal BFGS step
+   12     -93.4249484471      2.34e-11   Normal BFGS step
+   13     -93.4249484471      1.61e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.53e-09
+   14     -93.4249484471      3.42e-13   Normal BFGS step
+   14     -93.4249484471      3.42e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249483885      1.54e-04   Normal BFGS step
+    2     -93.4249486230      4.10e-04  Line search: overstep
+    3     -93.4249486276      4.18e-05   Normal BFGS step
+    4     -93.4249486294      1.77e-05   Normal BFGS step
+    5     -93.4249486295      4.93e-06   Normal BFGS step
+    6     -93.4249486295      6.90e-07   Normal BFGS step
+    7     -93.4249486295      7.99e-08   Normal BFGS step
+    8     -93.4249486295      2.28e-08   Normal BFGS step
+    9     -93.4249486295      6.25e-10   Normal BFGS step
+   10     -93.4249486295      1.22e-10   Normal BFGS step
+   11     -93.4249486295      6.38e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.23e-10
+   12     -93.4249486295      1.88e-11   Normal BFGS step
+   13     -93.4249486295      2.65e-12   Normal BFGS step
+   14     -93.4249486295      1.72e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.00e-09
+   15     -93.4249486295      2.65e-13   Normal BFGS step
+   15     -93.4249486295      2.65e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 15
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249481218      1.85e-03   Normal BFGS step
+    2     -93.4249487376      1.08e-03   Normal BFGS step
+    3     -93.4249487462      9.14e-05   Normal BFGS step
+    4     -93.4249487481      5.49e-05   Normal BFGS step
+    5     -93.4249487481      1.11e-05   Normal BFGS step
+    6     -93.4249487482      5.88e-06   Normal BFGS step
+    7     -93.4249487482      4.46e-07   Normal BFGS step
+    8     -93.4249487482      8.40e-08   Normal BFGS step
+    9     -93.4249487482      1.07e-08   Normal BFGS step
+   10     -93.4249487482      4.23e-10   Normal BFGS step
+   11     -93.4249487482      8.43e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.53e-10
+   12     -93.4249487482      5.08e-11   Normal BFGS step
+   13     -93.4249487482      3.34e-11   Normal BFGS step
+   14     -93.4249487482      1.91e-11   Normal BFGS step
+   15     -93.4249487482      4.66e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.22e-09
+   16     -93.4249487482      2.63e-12   Normal BFGS step
+   17     -93.4249487482      2.13e-13   Normal BFGS step
+   17     -93.4249487482      2.13e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249487234      1.06e-04   Normal BFGS step
+    2     -93.4249488226      2.83e-04  Line search: overstep
+    3     -93.4249488245      2.93e-05   Normal BFGS step
+    4     -93.4249488253      1.22e-05   Normal BFGS step
+    5     -93.4249488253      4.16e-06   Normal BFGS step
+    6     -93.4249488253      5.61e-07   Normal BFGS step
+    7     -93.4249488253      5.67e-08   Normal BFGS step
+    8     -93.4249488253      1.18e-08   Normal BFGS step
+    9     -93.4249488253      4.06e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+   10     -93.4249488253      7.97e-11   Normal BFGS step
+   11     -93.4249488253      4.14e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.64e-10
+   12     -93.4249488253      1.23e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.30e-10
+   13     -93.4249488253      1.72e-12   Normal BFGS step
+   14     -93.4249488253      1.24e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.22e-09
+   15     -93.4249488253      2.00e-13   Normal BFGS step
+   15     -93.4249488253      2.00e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 16
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249486080      1.20e-03   Normal BFGS step
+    2     -93.4249488710      7.01e-04   Normal BFGS step
+    3     -93.4249488746      5.98e-05   Normal BFGS step
+    4     -93.4249488754      3.62e-05   Normal BFGS step
+    5     -93.4249488754      7.29e-06   Normal BFGS step
+    6     -93.4249488755      3.83e-06   Normal BFGS step
+    7     -93.4249488755      2.90e-07   Normal BFGS step
+    8     -93.4249488755      5.40e-08   Normal BFGS step
+    9     -93.4249488755      7.01e-09   Normal BFGS step
+   10     -93.4249488755      2.70e-10   Normal BFGS step
+   11     -93.4249488755      5.40e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 6.22e-10
+   12     -93.4249488755      3.42e-11   Normal BFGS step
+   13     -93.4249488755      6.76e-12   Normal BFGS step
+   14     -93.4249488755      5.79e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 6.96e-10
+   15     -93.4249488755      1.87e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 6.96e-10
+   16     -93.4249488755      1.77e-12   Normal BFGS step
+   17     -93.4249488755      1.16e-13   Normal BFGS step
+   17     -93.4249488755      1.16e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249488650      8.22e-05   Normal BFGS step
+    2     -93.4249489069      2.19e-04  Line search: overstep
+    3     -93.4249489077      1.82e-05   Normal BFGS step
+    4     -93.4249489080      9.14e-06   Normal BFGS step
+    5     -93.4249489080      2.73e-06   Normal BFGS step
+    6     -93.4249489080      3.59e-07   Normal BFGS step
+    7     -93.4249489080      3.37e-08   Normal BFGS step
+    8     -93.4249489080      7.06e-09   Normal BFGS step
+    9     -93.4249489080      2.64e-10   Normal BFGS step
+   10     -93.4249489080      5.18e-11   Normal BFGS step
+   11     -93.4249489080      2.68e-11   Normal BFGS step
+   12     -93.4249489080      7.97e-12   Normal BFGS step
+   13     -93.4249489080      1.12e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.60e-09
+   14     -93.4249489080      8.54e-13   Normal BFGS step
+   14     -93.4249489080      8.54e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 17
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249488156      7.80e-04   Normal BFGS step
+    2     -93.4249489273      4.55e-04   Normal BFGS step
+    3     -93.4249489288      3.91e-05   Normal BFGS step
+    4     -93.4249489291      2.37e-05   Normal BFGS step
+    5     -93.4249489292      4.75e-06   Normal BFGS step
+    6     -93.4249489292      2.49e-06   Normal BFGS step
+    7     -93.4249489292      1.88e-07   Normal BFGS step
+    8     -93.4249489292      3.48e-08   Normal BFGS step
+    9     -93.4249489292      4.57e-09   Normal BFGS step
+   10     -93.4249489292      1.74e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 9.63e-10
+   11     -93.4249489292      3.54e-11   Normal BFGS step
+   12     -93.4249489292      2.27e-11   Normal BFGS step
+   13     -93.4249489292      4.44e-12   Normal BFGS step
+   14     -93.4249489292      2.64e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 9.68e-10
+   15     -93.4249489292      1.04e-12   Normal BFGS step
+   16     -93.4249489292      9.00e-13   Normal BFGS step
+   16     -93.4249489292      9.00e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489248      5.60e-05   Normal BFGS step
+    2     -93.4249489424      1.49e-04  Line search: overstep
+    3     -93.4249489427      1.30e-05   Normal BFGS step
+    4     -93.4249489429      4.92e-06   Normal BFGS step
+    5     -93.4249489429      1.42e-06   Normal BFGS step
+    6     -93.4249489429      2.31e-07   Normal BFGS step
+    7     -93.4249489429      2.19e-08   Normal BFGS step
+    8     -93.4249489429      5.09e-09   Normal BFGS step
+    9     -93.4249489429      1.71e-10   Normal BFGS step
+   10     -93.4249489429      3.36e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.70e-10
+   11     -93.4249489429      1.74e-11   Normal BFGS step
+   12     -93.4249489429      5.17e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.70e-10
+   13     -93.4249489429      7.27e-13   Normal BFGS step
+   13     -93.4249489429      7.27e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 18
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489037      5.06e-04   Normal BFGS step
+    2     -93.4249489510      2.95e-04   Normal BFGS step
+    3     -93.4249489516      2.54e-05   Normal BFGS step
+    4     -93.4249489518      1.55e-05   Normal BFGS step
+    5     -93.4249489518      3.09e-06   Normal BFGS step
+    6     -93.4249489518      1.61e-06   Normal BFGS step
+    7     -93.4249489518      1.22e-07   Normal BFGS step
+    8     -93.4249489518      2.24e-08   Normal BFGS step
+    9     -93.4249489518      2.97e-09   Normal BFGS step
+   10     -93.4249489518      1.12e-10   Normal BFGS step
+   11     -93.4249489518      2.34e-11   Normal BFGS step
+   12     -93.4249489518      1.49e-11   Normal BFGS step
+   13     -93.4249489518      2.73e-12   Normal BFGS step
+   14     -93.4249489518      2.87e-12   Normal BFGS step
+   15     -93.4249489518      7.36e-13   Normal BFGS step
+   15     -93.4249489518      7.36e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489499      3.61e-05   Normal BFGS step
+    2     -93.4249489575      9.46e-05   Normal BFGS step
+    3     -93.4249489575      3.46e-06   Normal BFGS step
+    4     -93.4249489575      3.64e-06   Normal BFGS step
+    5     -93.4249489575      5.32e-08   Normal BFGS step
+    6     -93.4249489575      1.75e-08   Normal BFGS step
+    7     -93.4249489575      2.16e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    8     -93.4249489575      7.23e-11   Normal BFGS step
+    9     -93.4249489575      1.01e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 7.30e-11
+   10     -93.4249489575      3.97e-11   Normal BFGS step
+   11     -93.4249489575      4.60e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.86e-09
+   12     -93.4249489575      1.08e-12   Normal BFGS step
+   13     -93.4249489575      9.15e-14   Normal BFGS step
+   13     -93.4249489575      9.15e-14  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 19
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489410      3.28e-04   Normal BFGS step
+    2     -93.4249489610      1.91e-04   Normal BFGS step
+    3     -93.4249489612      1.65e-05   Normal BFGS step
+    4     -93.4249489613      1.01e-05   Normal BFGS step
+    5     -93.4249489613      2.01e-06   Normal BFGS step
+    6     -93.4249489613      1.05e-06   Normal BFGS step
+    7     -93.4249489613      7.93e-08   Normal BFGS step
+    8     -93.4249489613      1.45e-08   Normal BFGS step
+    9     -93.4249489613      1.93e-09   Normal BFGS step
+   10     -93.4249489613      7.20e-11   Normal BFGS step
+   11     -93.4249489613      2.94e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.07e-09
+   12     -93.4249489613      3.26e-11   Normal BFGS step
+   13     -93.4249489613      5.09e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.07e-09
+   14     -93.4249489613      3.07e-12   Normal BFGS step
+   15     -93.4249489613      6.29e-13   Normal BFGS step
+   15     -93.4249489613      6.29e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489605      2.23e-05   Normal BFGS step
+    2     -93.4249489637      4.74e-05   Normal BFGS step
+    3     -93.4249489637      2.11e-06   Normal BFGS step
+    4     -93.4249489637      1.94e-06   Normal BFGS step
+    5     -93.4249489637      3.30e-08   Normal BFGS step
+    6     -93.4249489637      1.10e-08   Normal BFGS step
+    7     -93.4249489637      1.40e-10   Normal BFGS step
+    8     -93.4249489637      4.21e-11   Normal BFGS step
+    9     -93.4249489637      6.60e-11   Normal BFGS step
+   10     -93.4249489637      2.64e-11   Normal BFGS step
+   11     -93.4249489637      3.06e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.46e-09
+   12     -93.4249489637      7.15e-13   Normal BFGS step
+   12     -93.4249489637      7.15e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 20
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489568      2.13e-04   Normal BFGS step
+    2     -93.4249489652      1.24e-04   Normal BFGS step
+    3     -93.4249489653      1.07e-05   Normal BFGS step
+    4     -93.4249489653      6.55e-06   Normal BFGS step
+    5     -93.4249489653      1.30e-06   Normal BFGS step
+    6     -93.4249489653      6.79e-07   Normal BFGS step
+    7     -93.4249489653      5.14e-08   Normal BFGS step
+    8     -93.4249489653      9.38e-09   Normal BFGS step
+    9     -93.4249489653      1.25e-09   Normal BFGS step
+   10     -93.4249489653      4.63e-11   Normal BFGS step
+   11     -93.4249489653      1.00e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.29e-10
+   12     -93.4249489653      6.25e-12   Normal BFGS step
+   13     -93.4249489653      3.11e-12   Normal BFGS step
+   14     -93.4249489653      2.22e-12   Normal BFGS step
+   15     -93.4249489653      5.13e-13   Normal BFGS step
+   15     -93.4249489653      5.13e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489650      1.53e-05   Normal BFGS step
+    2     -93.4249489663      3.89e-05   Normal BFGS step
+    3     -93.4249489663      1.38e-06   Normal BFGS step
+    4     -93.4249489663      1.48e-06   Normal BFGS step
+    5     -93.4249489663      2.26e-08   Normal BFGS step
+    6     -93.4249489663      7.38e-09   Normal BFGS step
+    7     -93.4249489663      9.08e-11   Normal BFGS step
+    8     -93.4249489663      3.06e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    9     -93.4249489663      4.28e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+   10     -93.4249489663      1.49e-11   Normal BFGS step
+   11     -93.4249489663      1.73e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 9.69e-10
+   12     -93.4249489663      4.00e-13   Normal BFGS step
+   12     -93.4249489663      4.00e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 21
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489634      1.38e-04   Normal BFGS step
+    2     -93.4249489669      8.03e-05   Normal BFGS step
+    3     -93.4249489670      6.96e-06   Normal BFGS step
+    4     -93.4249489670      4.26e-06   Normal BFGS step
+    5     -93.4249489670      8.46e-07   Normal BFGS step
+    6     -93.4249489670      4.40e-07   Normal BFGS step
+    7     -93.4249489670      3.34e-08   Normal BFGS step
+    8     -93.4249489670      6.07e-09   Normal BFGS step
+    9     -93.4249489670      8.12e-10   Normal BFGS step
+   10     -93.4249489670      3.00e-11   Normal BFGS step
+   11     -93.4249489670      6.54e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.17e-09
+   12     -93.4249489670      4.11e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.17e-09
+   13     -93.4249489670      1.98e-12   Normal BFGS step
+   14     -93.4249489670      1.38e-12   Normal BFGS step
+   15     -93.4249489670      3.30e-13   Normal BFGS step
+   15     -93.4249489670      3.30e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489668      7.94e-06   Normal BFGS step
+    2     -93.4249489674      2.12e-05   Normal BFGS step
+    3     -93.4249489674      1.04e-06   Normal BFGS step
+    4     -93.4249489674      9.83e-07   Normal BFGS step
+    5     -93.4249489674      1.47e-08   Normal BFGS step
+    6     -93.4249489674      4.63e-09   Normal BFGS step
+    7     -93.4249489674      5.88e-11   Normal BFGS step
+    8     -93.4249489674      1.86e-11   Normal BFGS step
+    9     -93.4249489674      2.76e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.89e-09
+   10     -93.4249489674      1.13e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.89e-09
+   11     -93.4249489674      1.32e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 3.89e-09
+   12     -93.4249489674      3.14e-13   Normal BFGS step
+   12     -93.4249489674      3.14e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 22
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489662      8.95e-05   Normal BFGS step
+    2     -93.4249489677      5.21e-05   Normal BFGS step
+    3     -93.4249489677      4.52e-06   Normal BFGS step
+    4     -93.4249489677      2.76e-06   Normal BFGS step
+    5     -93.4249489677      5.49e-07   Normal BFGS step
+    6     -93.4249489677      2.85e-07   Normal BFGS step
+    7     -93.4249489677      2.16e-08   Normal BFGS step
+    8     -93.4249489677      3.93e-09   Normal BFGS step
+    9     -93.4249489677      5.26e-10   Normal BFGS step
+   10     -93.4249489677      1.94e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.88e-11
+   11     -93.4249489677      4.22e-12   Normal BFGS step
+   12     -93.4249489677      2.55e-12   Normal BFGS step
+   13     -93.4249489677      1.42e-12   Normal BFGS step
+   14     -93.4249489677      9.86e-13   Normal BFGS step
+   14     -93.4249489677      9.86e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489676      5.13e-06   Normal BFGS step
+    2     -93.4249489679      1.59e-05   Normal BFGS step
+    3     -93.4249489679      6.59e-07   Normal BFGS step
+    4     -93.4249489679      6.27e-07   Normal BFGS step
+    5     -93.4249489679      9.40e-09   Normal BFGS step
+    6     -93.4249489679      3.10e-09   Normal BFGS step
+    7     -93.4249489679      3.81e-11   Normal BFGS step
+    8     -93.4249489679      1.17e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    9     -93.4249489679      1.63e-11   Normal BFGS step
+   10     -93.4249489679      6.68e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.87e-09
+   11     -93.4249489679      7.79e-13   Normal BFGS step
+   11     -93.4249489679      7.79e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 23
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489673      5.80e-05   Normal BFGS step
+    2     -93.4249489680      3.37e-05   Normal BFGS step
+    3     -93.4249489680      2.93e-06   Normal BFGS step
+    4     -93.4249489680      1.79e-06   Normal BFGS step
+    5     -93.4249489680      3.56e-07   Normal BFGS step
+    6     -93.4249489680      1.85e-07   Normal BFGS step
+    7     -93.4249489680      1.40e-08   Normal BFGS step
+    8     -93.4249489680      2.55e-09   Normal BFGS step
+    9     -93.4249489680      3.41e-10   Normal BFGS step
+   10     -93.4249489680      1.26e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.91e-10
+   11     -93.4249489680      2.77e-12   Normal BFGS step
+   12     -93.4249489680      2.34e-12   Normal BFGS step
+   13     -93.4249489680      9.51e-13   Normal BFGS step
+   13     -93.4249489680      9.51e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489680      3.99e-06   Normal BFGS step
+    2     -93.4249489681      1.12e-05   Normal BFGS step
+    3     -93.4249489681      3.81e-07   Normal BFGS step
+    4     -93.4249489681      3.71e-07   Normal BFGS step
+    5     -93.4249489681      5.83e-09   Normal BFGS step
+    6     -93.4249489681      1.95e-09   Normal BFGS step
+    7     -93.4249489681      2.47e-11   Normal BFGS step
+    8     -93.4249489681      7.60e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 6.12e-11
+    9     -93.4249489681      1.06e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.67e-11
+   10     -93.4249489681      4.34e-12   Normal BFGS step
+   11     -93.4249489681      5.06e-13   Normal BFGS step
+   11     -93.4249489681      5.06e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 24
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489678      3.76e-05   Normal BFGS step
+    2     -93.4249489681      2.19e-05   Normal BFGS step
+    3     -93.4249489681      1.90e-06   Normal BFGS step
+    4     -93.4249489681      1.16e-06   Normal BFGS step
+    5     -93.4249489681      2.31e-07   Normal BFGS step
+    6     -93.4249489681      1.20e-07   Normal BFGS step
+    7     -93.4249489681      9.08e-09   Normal BFGS step
+    8     -93.4249489681      1.65e-09   Normal BFGS step
+    9     -93.4249489681      2.21e-10   Normal BFGS step
+   10     -93.4249489681      8.06e-12   Normal BFGS step
+   11     -93.4249489681      1.19e-11   Normal BFGS step
+   12     -93.4249489681      2.39e-12   Normal BFGS step
+   13     -93.4249489681      5.01e-13   Normal BFGS step
+   13     -93.4249489681      5.01e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489681      2.62e-06   Normal BFGS step
+    2     -93.4249489681      6.67e-06   Normal BFGS step
+    3     -93.4249489681      2.86e-07   Normal BFGS step
+    4     -93.4249489681      2.60e-07   Normal BFGS step
+    5     -93.4249489681      3.95e-09   Normal BFGS step
+    6     -93.4249489681      1.26e-09   Normal BFGS step
+    7     -93.4249489681      1.60e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    8     -93.4249489681      5.23e-12   Normal BFGS step
+    9     -93.4249489681      7.32e-12   Normal BFGS step
+   10     -93.4249489681      2.98e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 7.18e-10
+   11     -93.4249489681      3.44e-13   Normal BFGS step
+   11     -93.4249489681      3.44e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 25
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489680      2.44e-05   Normal BFGS step
+    2     -93.4249489682      1.42e-05   Normal BFGS step
+    3     -93.4249489682      1.23e-06   Normal BFGS step
+    4     -93.4249489682      7.53e-07   Normal BFGS step
+    5     -93.4249489682      1.49e-07   Normal BFGS step
+    6     -93.4249489682      7.77e-08   Normal BFGS step
+    7     -93.4249489682      5.89e-09   Normal BFGS step
+    8     -93.4249489682      1.07e-09   Normal BFGS step
+    9     -93.4249489682      1.43e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.40e-12
+   10     -93.4249489682      5.22e-12   Normal BFGS step
+   11     -93.4249489682      7.06e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.82e-10
+   12     -93.4249489682      1.39e-12   Normal BFGS step
+   13     -93.4249489682      3.71e-13   Normal BFGS step
+   13     -93.4249489682      3.71e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489682      1.51e-06   Normal BFGS step
+    2     -93.4249489682      4.58e-06   Normal BFGS step
+    3     -93.4249489682      1.79e-07   Normal BFGS step
+    4     -93.4249489682      1.39e-07   Normal BFGS step
+    5     -93.4249489682      2.45e-09   Normal BFGS step
+    6     -93.4249489682      8.18e-10   Normal BFGS step
+    7     -93.4249489682      1.04e-11   Normal BFGS step
+    8     -93.4249489682      3.46e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    9     -93.4249489682      4.86e-12   Normal BFGS step
+   10     -93.4249489682      1.95e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.18e-09
+   11     -93.4249489682      2.30e-13   Normal BFGS step
+   11     -93.4249489682      2.30e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 26
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489681      1.58e-05   Normal BFGS step
+    2     -93.4249489682      9.19e-06   Normal BFGS step
+    3     -93.4249489682      7.98e-07   Normal BFGS step
+    4     -93.4249489682      4.88e-07   Normal BFGS step
+    5     -93.4249489682      9.69e-08   Normal BFGS step
+    6     -93.4249489682      5.04e-08   Normal BFGS step
+    7     -93.4249489682      3.82e-09   Normal BFGS step
+    8     -93.4249489682      6.93e-10   Normal BFGS step
+    9     -93.4249489682      9.30e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.40e-12
+   10     -93.4249489682      3.34e-12   Normal BFGS step
+   11     -93.4249489682      5.15e-12   Normal BFGS step
+   12     -93.4249489682      8.85e-13   Normal BFGS step
+   12     -93.4249489682      8.85e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489682      1.06e-06   Normal BFGS step
+    2     -93.4249489682      2.22e-06   Normal BFGS step
+    3     -93.4249489682      1.06e-07   Normal BFGS step
+    4     -93.4249489682      1.05e-07   Normal BFGS step
+    5     -93.4249489682      1.59e-09   Normal BFGS step
+    6     -93.4249489682      5.30e-10   Normal BFGS step
+    7     -93.4249489682      6.74e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    8     -93.4249489682      1.72e-12   Normal BFGS step
+    9     -93.4249489682      2.41e-12   Normal BFGS step
+   10     -93.4249489682      9.56e-13   Normal BFGS step
+   10     -93.4249489682      9.56e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 27
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489682      1.02e-05   Normal BFGS step
+    2     -93.4249489682      5.95e-06   Normal BFGS step
+    3     -93.4249489682      5.17e-07   Normal BFGS step
+    4     -93.4249489682      3.16e-07   Normal BFGS step
+    5     -93.4249489682      6.28e-08   Normal BFGS step
+    6     -93.4249489682      3.26e-08   Normal BFGS step
+    7     -93.4249489682      2.47e-09   Normal BFGS step
+    8     -93.4249489682      4.49e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.40e-12
+    9     -93.4249489682      6.04e-11   Normal BFGS step
+   10     -93.4249489682      4.36e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 8.14e-11
+   11     -93.4249489682      7.43e-12   Normal BFGS step
+   12     -93.4249489682      3.11e-13   Normal BFGS step
+   12     -93.4249489682      3.11e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489682      5.38e-07   Normal BFGS step
+    2     -93.4249489682      1.94e-06   Normal BFGS step
+    3     -93.4249489682      7.56e-08   Normal BFGS step
+    4     -93.4249489682      7.32e-08   Normal BFGS step
+    5     -93.4249489682      1.03e-09   Normal BFGS step
+    6     -93.4249489682      3.44e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    7     -93.4249489682      4.36e-12   Normal BFGS step
+    8     -93.4249489682      1.48e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 7.48e-11
+    9     -93.4249489682      2.08e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 7.48e-11
+   10     -93.4249489682      8.20e-13   Normal BFGS step
+   10     -93.4249489682      8.20e-13  Convergence criterion met
+ ----------------------------------------------
+ NEO-SCF Cycles 28
+ Nuclear Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489682      6.64e-06   Normal BFGS step
+    2     -93.4249489682      3.86e-06   Normal BFGS step
+    3     -93.4249489682      3.35e-07   Normal BFGS step
+    4     -93.4249489682      2.05e-07   Normal BFGS step
+    5     -93.4249489682      4.07e-08   Normal BFGS step
+    6     -93.4249489682      2.12e-08   Normal BFGS step
+    7     -93.4249489682      1.60e-09   Normal BFGS step
+    8     -93.4249489682      2.91e-10   Normal BFGS step
+    9     -93.4249489682      3.90e-11   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.40e-12
+   10     -93.4249489682      1.41e-12   Normal BFGS step
+   11     -93.4249489682      1.31e-12   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 1.24e-09
+   12     -93.4249489682      6.24e-13   Normal BFGS step
+   12     -93.4249489682      6.24e-13  Convergence criterion met
+ ----------------------------------------------
+ Electronic Block
+ ----------------------------------------------
+  Cycle       Energy        RMS Gradient
+ ----------------------------------------------
+    1     -93.4249489682      4.59e-07   Normal BFGS step
+    2     -93.4249489682      1.25e-06   Normal BFGS step
+    3     -93.4249489682      4.37e-08   Normal BFGS step
+    4     -93.4249489682      4.18e-08   Normal BFGS step
+    5     -93.4249489682      6.66e-10   Normal BFGS step
+    6     -93.4249489682      2.23e-10   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 5.32e-11
+    7     -93.4249489682      2.83e-12   Normal BFGS step
+    8     -93.4249489682      8.35e-13   Normal BFGS step
+    8     -93.4249489682      8.35e-13  Convergence criterion met
+ ----------------------------------------------
+
+ E(NEO-SCF) = -93.4249489682
+ NEO SCF time:       CPU 538.83s  wall 163.29s 
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- MO Energies --
+  -14.3531   -10.2342    -0.9237    -0.5966    -0.3835    -0.3620    -0.3620     0.0118 
+    0.0118     0.0309     0.1254     0.3672     0.4272     0.4272     0.4729     0.4729 
+    0.5174     0.6528     0.7199     0.8088     0.8088     0.9538     0.9936     0.9936 
+    1.2423     1.3630     1.3630     1.4199     1.4199     1.5919     1.6617     1.6617 
+    1.9538     1.9538     2.0559     2.0559     2.1198     2.6416     2.8124     2.8483 
+    2.8483     3.1122     3.2831     3.2831     3.3208     3.5625     3.5625     4.2920 
+    4.2920     4.4479     4.4479     4.5089     4.5089     5.3401     5.5596     5.5596 
+    5.8073     9.4556    11.6513    11.6513    11.8645    11.8646    11.9101    12.0580 
+   12.0580    12.0592    12.0592    12.1888    12.1892    12.2056    12.2071    12.5858 
+   12.5858    12.7575    13.1614    13.1650    13.2047    13.2047    13.9985    14.2895 
+   16.5599    16.5599    16.7424 
+  -- MO Populations --
+    1.0000     1.0000     1.0000     1.0000     1.0000     1.0000     1.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- MO Energies --
+   -0.8856    -0.8766    -0.8766    -0.8723    -0.8670    -0.8633    -0.8633    -0.8617 
+   -0.8538    -0.8512    -0.8453    -0.8357    -0.8291    -0.8291    -0.8253    -0.8241 
+   -0.8241    -0.8135    -0.7998    -0.7998    -0.7993    -0.7817    -0.7725    -0.7725 
+   -0.7677    -0.7670    -0.7635    -0.7635    -0.7613    -0.7364    -0.7296    -0.7296 
+   -0.7122    -0.7122    -0.6987    -0.6792    -0.6752    -0.6720    -0.6491    -0.6491 
+   -0.5637    -0.5563    -0.5563    -0.4100    -0.2768 
+  -- MO Populations --
+    1.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000     0.0000 
+    0.0000     0.0000     0.0000     0.0000     0.0000 
+ ---------------------------------------
+Expectation value of proton 0 : 4.32676347 0.00000000 -0.00000000
+Protonic dipole moment: 
+Dx: 10.9976203 DY: 0.0000000 Dz: -0.0000000
+Electronic dipole moment: 
+Dx: -44.4332921 DY: -0.0000000 Dz: 0.0000000
+Total dipole moment: 
+Dx: 2.9370036 DY: 0.0000000 Dz: -0.0000000 Total 2.9370036
+
+Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      0                    -0.082584
+      1                    -0.048369
+      2                    0.130953
+----------------------------------------
+ Sum of atomic charges =   0.000000
+ 
+
+ Excited-state NEO-SCF calculation
+Starting NEO-TDDFT guess with 3number of protonic guess
+Davidson diagonalization: calculating 3number of states out of 576 number of states in total 
+Davidson diagonalization of NEO  (A-B)^0.5(A+B)(A-B)^0.5 matrix
+  Iter	 Eigs       Residual       DE
+Matvec time for each step:       CPU 12.99s  wall 3.67s 
+Av.n_rows3
+edav 0.00
+                 resid 5.535980428024895e-03 r_conv: 9.999999939225290e-09
+                 resid 5.535980428025185e-03 r_conv: 9.999999939225290e-09
+                 resid 4.982004066952206e-03 r_conv: 9.999999939225290e-09
+  000	  0.02504 5.535980e-03 nan 
+		  0.02504 5.535980e-03 nan 
+		  0.03181 4.982004e-03 nan 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 6
+Matvec time for each step:       CPU 25.14s  wall 7.12s 
+Av.n_rows6
+edav 0.00
+                 resid 6.256013490769724e-03 r_conv: 9.999999939225290e-09
+                 resid 6.256013490771599e-03 r_conv: 9.999999939225290e-09
+                 resid 4.808167992189295e-03 r_conv: 9.999999939225290e-09
+  001	  0.02401 6.256013e-03 -1.031725e-03 
+		  0.02401 6.256013e-03 -1.031725e-03 
+		  0.02938 4.808168e-03 -2.425689e-03 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 9
+Matvec time for each step:       CPU 37.28s  wall 10.57s 
+Av.n_rows9
+edav 0.00
+                 resid 1.512177739208953e-03 r_conv: 9.999999939225290e-09
+                 resid 1.512177739212399e-03 r_conv: 9.999999939225290e-09
+                 resid 3.333725561804620e-03 r_conv: 9.999999939225290e-09
+  002	  0.00981 1.512178e-03 -1.419337e-02 
+		  0.00981 1.512178e-03 -1.419337e-02 
+		  0.02865 3.333726e-03 -7.318878e-04 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 12
+Matvec time for each step:       CPU 49.45s  wall 14.04s 
+Av.n_rows12
+edav 0.00
+                 resid 3.200746766723075e-04 r_conv: 9.999999939225290e-09
+                 resid 3.200746766741062e-04 r_conv: 9.999999939225290e-09
+                 resid 3.135427841444958e-03 r_conv: 9.999999939225290e-09
+  003	  0.00823 3.200747e-04 -1.585338e-03 
+		  0.00823 3.200747e-04 -1.585338e-03 
+		  0.02059 3.135428e-03 -8.061359e-03 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 15
+Matvec time for each step:       CPU 61.60s  wall 17.49s 
+Av.n_rows15
+edav 0.00
+                 resid 7.509395091847213e-05 r_conv: 9.999999939225290e-09
+                 resid 7.509395091902746e-05 r_conv: 9.999999939225290e-09
+                 resid 1.220410599176946e-03 r_conv: 9.999999939225290e-09
+  004	  0.00815 7.509395e-05 -7.541689e-05 
+		  0.00815 7.509395e-05 -7.541689e-05 
+		  0.01782 1.220411e-03 -2.773358e-03 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 18
+Matvec time for each step:       CPU 73.76s  wall 20.95s 
+Av.n_rows18
+edav 0.00
+                 resid 2.164780293312393e-05 r_conv: 9.999999939225290e-09
+                 resid 2.164780293308667e-05 r_conv: 9.999999939225290e-09
+                 resid 3.632202666273019e-04 r_conv: 9.999999939225290e-09
+  005	  0.00815 2.164780e-05 -3.959992e-06 
+		  0.00815 2.164780e-05 -3.959992e-06 
+		  0.01699 3.632203e-04 -8.263669e-04 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 21
+Matvec time for each step:       CPU 85.94s  wall 24.42s 
+Av.n_rows21
+edav 0.00
+                 resid 2.043583258237326e-06 r_conv: 9.999999939225290e-09
+                 resid 2.043585499821211e-06 r_conv: 9.999999939225290e-09
+                 resid 1.062281129397856e-04 r_conv: 9.999999939225290e-09
+  006	  0.00815 2.043583e-06 -9.168427e-08 
+		  0.00815 2.043585e-06 -9.168426e-08 
+		  0.01690 1.062281e-04 -8.878014e-05 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 24
+Matvec time for each step:       CPU 98.10s  wall 27.86s 
+Av.n_rows24
+edav 0.00
+                 resid 3.328188509641590e-06 r_conv: 9.999999939225290e-09
+                 resid 3.376175784940024e-06 r_conv: 9.999999939225290e-09
+                 resid 8.532065712593818e-06 r_conv: 9.999999939225290e-09
+  007	  0.00815 3.328189e-06 -9.169650e-07 
+		  0.00815 3.376176e-06 -9.161344e-07 
+		  0.01689 8.532066e-06 -1.181372e-05 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 27
+Matvec time for each step:       CPU 110.23s  wall 31.31s 
+Av.n_rows27
+edav 0.00
+                 resid 2.495979850892701e-06 r_conv: 9.999999939225290e-09
+                 resid 1.257444975580774e-05 r_conv: 9.999999939225290e-09
+                 resid 3.160111547649233e-05 r_conv: 9.999999939225290e-09
+  008	  0.00814 2.495980e-06 -2.498155e-06 
+		  0.00815 1.257445e-05 -1.051961e-06 
+		  0.01687 3.160112e-05 -1.752264e-05 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 30
+Matvec time for each step:       CPU 122.41s  wall 34.78s 
+Av.n_rows30
+edav 0.00
+                 resid 1.231141382218545e-06 r_conv: 9.999999939225290e-09
+                 resid 2.598548049922487e-06 r_conv: 9.999999939225290e-09
+                 resid 2.078702348590159e-05 r_conv: 9.999999939225290e-09
+  009	  0.00814 1.231141e-06 -9.749592e-08 
+		  0.00814 2.598548e-06 -1.448540e-06 
+		  0.01684 2.078702e-05 -3.278899e-05 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 33
+Matvec time for each step:       CPU 134.60s  wall 38.25s 
+Av.n_rows33
+edav 0.00
+                 resid 9.195503465049042e-07 r_conv: 9.999999939225290e-09
+                 resid 1.145471114433473e-06 r_conv: 9.999999939225290e-09
+                 resid 9.883174098864704e-06 r_conv: 9.999999939225290e-09
+  010	  0.00814 9.195503e-07 -3.629185e-07 
+		  0.00814 1.145471e-06 -7.226761e-08 
+		  0.01684 9.883174e-06 -3.381339e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 36
+Matvec time for each step:       CPU 146.75s  wall 41.71s 
+Av.n_rows36
+edav 0.00
+                 resid 7.899759368376843e-06 r_conv: 9.999999939225290e-09
+                 resid 9.908974684630350e-07 r_conv: 9.999999939225290e-09
+                 resid 6.693245483650262e-06 r_conv: 9.999999939225290e-09
+  011	  0.00814 7.899759e-06 -1.861744e-06 
+		  0.00814 9.908975e-07 -4.251040e-07 
+		  0.01684 6.693245e-06 -4.573885e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 39
+Matvec time for each step:       CPU 158.91s  wall 45.16s 
+Av.n_rows39
+edav 0.00
+                 resid 4.902796180728917e-07 r_conv: 9.999999939225290e-09
+                 resid 7.778692636875800e-06 r_conv: 9.999999939225290e-09
+                 resid 1.373437214005004e-05 r_conv: 9.999999939225290e-09
+  012	  0.00814 4.902796e-07 -1.259074e-07 
+		  0.00814 7.778693e-06 -1.855530e-06 
+		  0.01683 1.373437e-05 -1.012135e-05 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 42
+Matvec time for each step:       CPU 171.06s  wall 48.61s 
+Av.n_rows42
+edav 0.00
+                 resid 5.180757040877353e-07 r_conv: 9.999999939225290e-09
+                 resid 2.794027625908350e-07 r_conv: 9.999999939225290e-09
+                 resid 5.159760721592210e-06 r_conv: 9.999999939225290e-09
+  013	  0.00814 5.180757e-07 -5.223855e-08 
+		  0.00814 2.794028e-07 -1.332385e-07 
+		  0.01682 5.159761e-06 -4.889371e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 45
+Matvec time for each step:       CPU 183.21s  wall 52.07s 
+Av.n_rows45
+edav 0.00
+                 resid 2.504531528568210e-07 r_conv: 9.999999939225290e-09
+                 resid 1.282410557339251e-07 r_conv: 9.999999939225290e-09
+                 resid 7.384049744754731e-06 r_conv: 9.999999939225290e-09
+  014	  0.00814 2.504532e-07 -2.951637e-08 
+		  0.00814 1.282411e-07 -3.186866e-09 
+		  0.01682 7.384050e-06 -1.182007e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 48
+Matvec time for each step:       CPU 195.37s  wall 55.52s 
+Av.n_rows48
+edav 0.00
+                 resid 8.493855108258657e-07 r_conv: 9.999999939225290e-09
+                 resid 3.763306121510158e-07 r_conv: 9.999999939225290e-09
+                 resid 5.456075361910837e-06 r_conv: 9.999999939225290e-09
+  015	  0.00814 8.493855e-07 -1.635233e-08 
+		  0.00814 3.763306e-07 -4.078872e-08 
+		  0.01682 5.456075e-06 -2.434270e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 51
+Matvec time for each step:       CPU 207.53s  wall 58.98s 
+Av.n_rows51
+edav 0.00
+                 resid 8.264317094117964e-07 r_conv: 9.999999939225290e-09
+                 resid 1.019050791190049e-06 r_conv: 9.999999939225290e-09
+                 resid 8.556926890545496e-06 r_conv: 9.999999939225290e-09
+  016	  0.00814 8.264317e-07 -9.746579e-08 
+		  0.00814 1.019051e-06 -7.057066e-08 
+		  0.01682 8.556927e-06 -4.398964e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 54
+Matvec time for each step:       CPU 219.70s  wall 62.44s 
+Av.n_rows54
+edav 0.00
+                 resid 5.740392052890992e-07 r_conv: 9.999999939225290e-09
+                 resid 5.221602536563195e-07 r_conv: 9.999999939225290e-09
+                 resid 5.154823467772583e-06 r_conv: 9.999999939225290e-09
+  017	  0.00814 5.740392e-07 -4.888889e-08 
+		  0.00814 5.221603e-07 -6.320322e-08 
+		  0.01682 5.154823e-06 -1.398187e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 57
+Matvec time for each step:       CPU 231.86s  wall 65.90s 
+Av.n_rows57
+edav 0.00
+                 resid 1.746196429066423e-07 r_conv: 9.999999939225290e-09
+                 resid 4.856500228147166e-08 r_conv: 9.999999939225290e-09
+                 resid 3.983503890859909e-06 r_conv: 9.999999939225290e-09
+  018	  0.00814 1.746196e-07 -1.048193e-08 
+		  0.00814 4.856500e-08 -9.321651e-10 
+		  0.01681 3.983504e-06 -2.708431e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 60
+Matvec time for each step:       CPU 244.01s  wall 69.35s 
+Av.n_rows60
+edav 0.00
+                 resid 7.451905976494550e-07 r_conv: 9.999999939225290e-09
+                 resid 2.258758982545152e-07 r_conv: 9.999999939225290e-09
+                 resid 5.199367114524418e-06 r_conv: 9.999999939225290e-09
+  019	  0.00814 7.451906e-07 -1.462518e-07 
+		  0.00814 2.258759e-07 -4.724661e-08 
+		  0.01680 5.199367e-06 -7.489227e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 63
+Matvec time for each step:       CPU 256.16s  wall 72.80s 
+Av.n_rows63
+edav 0.00
+                 resid 4.090951295832400e-07 r_conv: 9.999999939225290e-09
+                 resid 4.608778765768240e-07 r_conv: 9.999999939225290e-09
+                 resid 2.299005145999638e-06 r_conv: 9.999999939225290e-09
+  020	  0.00814 4.090951e-07 -5.528623e-08 
+		  0.00814 4.608779e-07 -8.066759e-08 
+		  0.01680 2.299005e-06 -1.548643e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 66
+Matvec time for each step:       CPU 268.32s  wall 76.26s 
+Av.n_rows66
+edav 0.00
+                 resid 4.645486882156240e-07 r_conv: 9.999999939225290e-09
+                 resid 1.513809669616351e-07 r_conv: 9.999999939225290e-09
+                 resid 2.826876057559239e-06 r_conv: 9.999999939225290e-09
+  021	  0.00814 4.645487e-07 -7.577992e-08 
+		  0.00814 1.513810e-07 -9.656226e-09 
+		  0.01680 2.826876e-06 -2.969305e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 69
+Matvec time for each step:       CPU 280.45s  wall 79.70s 
+Av.n_rows69
+edav 0.00
+                 resid 7.244239388424222e-07 r_conv: 9.999999939225290e-09
+                 resid 3.576568327030095e-07 r_conv: 9.999999939225290e-09
+                 resid 1.588194051738811e-06 r_conv: 9.999999939225290e-09
+  022	  0.00814 7.244239e-07 -1.433133e-07 
+		  0.00814 3.576568e-07 -7.396082e-08 
+		  0.01680 1.588194e-06 -1.475553e-06 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 72
+Matvec time for each step:       CPU 292.60s  wall 83.15s 
+Av.n_rows72
+edav 0.00
+                 resid 2.396514453304424e-07 r_conv: 9.999999939225290e-09
+                 resid 2.844324387272138e-07 r_conv: 9.999999939225290e-09
+                 resid 1.352733539950301e-06 r_conv: 9.999999939225290e-09
+  023	  0.00814 2.396514e-07 -3.732660e-08 
+		  0.00814 2.844324e-07 -6.771729e-08 
+		  0.01680 1.352734e-06 -9.566205e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 75
+Matvec time for each step:       CPU 304.77s  wall 86.60s 
+Av.n_rows75
+edav 0.00
+                 resid 1.443978295668542e-07 r_conv: 9.999999939225290e-09
+                 resid 1.885892571993288e-07 r_conv: 9.999999939225290e-09
+                 resid 3.504191060212391e-07 r_conv: 9.999999939225290e-09
+  024	  0.00814 1.443978e-07 -1.454795e-08 
+		  0.00814 1.885893e-07 -2.422496e-08 
+		  0.01680 3.504191e-07 -1.367923e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 78
+Matvec time for each step:       CPU 316.97s  wall 90.08s 
+Av.n_rows78
+edav 0.00
+                 resid 2.338301861763958e-07 r_conv: 9.999999939225290e-09
+                 resid 2.274156699655965e-07 r_conv: 9.999999939225290e-09
+                 resid 6.008021539225180e-07 r_conv: 9.999999939225290e-09
+  025	  0.00814 2.338302e-07 -2.553718e-08 
+		  0.00814 2.274157e-07 -4.051602e-08 
+		  0.01680 6.008022e-07 -1.218224e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 81
+Matvec time for each step:       CPU 329.13s  wall 93.54s 
+Av.n_rows81
+edav 0.00
+                 resid 3.144615526366426e-07 r_conv: 9.999999939225290e-09
+                 resid 3.496276991036801e-07 r_conv: 9.999999939225290e-09
+                 resid 1.459749073801839e-06 r_conv: 9.999999939225290e-09
+  026	  0.00814 3.144616e-07 -3.820936e-08 
+		  0.00814 3.496277e-07 -6.985772e-08 
+		  0.01680 1.459749e-06 -7.959615e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 84
+Matvec time for each step:       CPU 341.30s  wall 97.00s 
+Av.n_rows84
+edav 0.00
+                 resid 4.198988065017155e-07 r_conv: 9.999999939225290e-09
+                 resid 2.018511898565207e-07 r_conv: 9.999999939225290e-09
+                 resid 8.865182596988641e-07 r_conv: 9.999999939225290e-09
+  027	  0.00814 4.198988e-07 -4.335275e-08 
+		  0.00814 2.018512e-07 -1.891180e-07 
+		  0.01680 8.865183e-07 -7.016919e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 87
+Matvec time for each step:       CPU 353.48s  wall 100.46s 
+Av.n_rows87
+edav 0.00
+                 resid 4.020086797858799e-07 r_conv: 9.999999939225290e-09
+                 resid 1.333966780112812e-07 r_conv: 9.999999939225290e-09
+                 resid 6.103795969128696e-07 r_conv: 9.999999939225290e-09
+  028	  0.00814 4.020087e-07 -8.482835e-08 
+		  0.00814 1.333967e-07 -2.325698e-08 
+		  0.01680 6.103796e-07 -2.294682e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 90
+Matvec time for each step:       CPU 365.65s  wall 103.93s 
+Av.n_rows90
+edav 0.00
+                 resid 2.999126549167254e-07 r_conv: 9.999999939225290e-09
+                 resid 7.350818919187830e-08 r_conv: 9.999999939225290e-09
+                 resid 3.983154573766592e-07 r_conv: 9.999999939225290e-09
+  029	  0.00814 2.999127e-07 -7.863631e-08 
+		  0.00814 7.350819e-08 -8.758467e-09 
+		  0.01680 3.983155e-07 -1.214754e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 93
+Matvec time for each step:       CPU 377.81s  wall 107.38s 
+Av.n_rows93
+edav 0.00
+                 resid 3.124150499280343e-07 r_conv: 9.999999939225290e-09
+                 resid 2.896179250574286e-07 r_conv: 9.999999939225290e-09
+                 resid 5.168104092576984e-07 r_conv: 9.999999939225290e-09
+  030	  0.00814 3.124150e-07 -7.761887e-08 
+		  0.00814 2.896179e-07 -5.613511e-08 
+		  0.01680 5.168104e-07 -1.761606e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 96
+Matvec time for each step:       CPU 389.98s  wall 110.83s 
+Av.n_rows96
+edav 0.00
+                 resid 4.293212128065121e-07 r_conv: 9.999999939225290e-09
+                 resid 1.929363466428289e-07 r_conv: 9.999999939225290e-09
+                 resid 6.109492414754041e-07 r_conv: 9.999999939225290e-09
+  031	  0.00814 4.293212e-07 -6.352616e-08 
+		  0.00814 1.929363e-07 -1.705780e-07 
+		  0.01680 6.109492e-07 -1.977503e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 99
+Matvec time for each step:       CPU 402.15s  wall 114.29s 
+Av.n_rows99
+edav 0.00
+                 resid 2.205508987084383e-07 r_conv: 9.999999939225290e-09
+                 resid 1.644338476049265e-07 r_conv: 9.999999939225290e-09
+                 resid 5.225241927439403e-07 r_conv: 9.999999939225290e-09
+  032	  0.00814 2.205509e-07 -4.318280e-08 
+		  0.00814 1.644338e-07 -1.530436e-08 
+		  0.01680 5.225242e-07 -2.174165e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 102
+Matvec time for each step:       CPU 414.33s  wall 117.75s 
+Av.n_rows102
+edav 0.00
+                 resid 1.138159157935338e-07 r_conv: 9.999999939225290e-09
+                 resid 1.361134696257992e-07 r_conv: 9.999999939225290e-09
+                 resid 3.058125461838051e-07 r_conv: 9.999999939225290e-09
+  033	  0.00814 1.138159e-07 -1.188199e-08 
+		  0.00814 1.361135e-07 -2.512937e-08 
+		  0.01680 3.058125e-07 -1.478962e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 105
+Matvec time for each step:       CPU 426.51s  wall 121.22s 
+Av.n_rows105
+edav 0.00
+                 resid 1.921649994105693e-07 r_conv: 9.999999939225290e-09
+                 resid 1.672663526334141e-07 r_conv: 9.999999939225290e-09
+                 resid 4.638418685831976e-07 r_conv: 9.999999939225290e-09
+  034	  0.00814 1.921650e-07 -4.795825e-08 
+		  0.00814 1.672664e-07 -7.222012e-08 
+		  0.01679 4.638419e-07 -3.310423e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 108
+Matvec time for each step:       CPU 438.73s  wall 124.71s 
+Av.n_rows108
+edav 0.00
+                 resid 2.982114903456925e-07 r_conv: 9.999999939225290e-09
+                 resid 2.491007359261033e-07 r_conv: 9.999999939225290e-09
+                 resid 4.134738246781978e-07 r_conv: 9.999999939225290e-09
+  035	  0.00814 2.982115e-07 -6.057992e-08 
+		  0.00814 2.491007e-07 -7.351502e-08 
+		  0.01679 4.134738e-07 -9.798323e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 111
+Matvec time for each step:       CPU 450.91s  wall 128.17s 
+Av.n_rows111
+edav 0.00
+                 resid 1.788957050455995e-07 r_conv: 9.999999939225290e-09
+                 resid 3.159394754185383e-08 r_conv: 9.999999939225290e-09
+                 resid 6.371146584716845e-07 r_conv: 9.999999939225290e-09
+  036	  0.00814 1.788957e-07 -2.148051e-08 
+		  0.00814 3.159395e-08 -1.141558e-09 
+		  0.01679 6.371147e-07 -1.295818e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 114
+Matvec time for each step:       CPU 463.07s  wall 131.63s 
+Av.n_rows114
+edav 0.00
+                 resid 2.248126120403767e-07 r_conv: 9.999999939225290e-09
+                 resid 7.650668635588232e-08 r_conv: 9.999999939225290e-09
+                 resid 2.199351956425613e-07 r_conv: 9.999999939225290e-09
+  037	  0.00814 2.248126e-07 -8.669076e-08 
+		  0.00814 7.650669e-08 -1.330276e-08 
+		  0.01679 2.199352e-07 -8.426890e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 117
+Matvec time for each step:       CPU 475.24s  wall 135.09s 
+Av.n_rows117
+edav 0.00
+                 resid 2.182218688211382e-07 r_conv: 9.999999939225290e-09
+                 resid 1.365333705767402e-07 r_conv: 9.999999939225290e-09
+                 resid 3.742427247031758e-07 r_conv: 9.999999939225290e-09
+  038	  0.00814 2.182219e-07 -5.549424e-08 
+		  0.00814 1.365334e-07 -3.275287e-08 
+		  0.01679 3.742427e-07 -1.984761e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 120
+Matvec time for each step:       CPU 487.43s  wall 138.55s 
+Av.n_rows120
+edav 0.00
+                 resid 1.567633624085011e-07 r_conv: 9.999999939225290e-09
+                 resid 5.741890284850815e-08 r_conv: 9.999999939225290e-09
+                 resid 9.859909276460007e-08 r_conv: 9.999999939225290e-09
+  039	  0.00814 1.567634e-07 -4.548304e-08 
+		  0.00814 5.741890e-08 -8.915123e-09 
+		  0.01679 9.859909e-08 -2.089917e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 123
+Matvec time for each step:       CPU 499.59s  wall 142.01s 
+Av.n_rows123
+edav 0.00
+                 resid 1.084916199730868e-07 r_conv: 9.999999939225290e-09
+                 resid 1.180240233922439e-07 r_conv: 9.999999939225290e-09
+                 resid 1.699496310992330e-07 r_conv: 9.999999939225290e-09
+  040	  0.00814 1.084916e-07 -2.378128e-08 
+		  0.00814 1.180240e-07 -3.061091e-08 
+		  0.01679 1.699496e-07 -6.655343e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 126
+Matvec time for each step:       CPU 511.78s  wall 145.47s 
+Av.n_rows126
+edav 0.00
+                 resid 1.378107244527296e-07 r_conv: 9.999999939225290e-09
+                 resid 6.882542386832407e-08 r_conv: 9.999999939225290e-09
+                 resid 1.733641301730687e-07 r_conv: 9.999999939225290e-09
+  041	  0.00814 1.378107e-07 -3.235102e-08 
+		  0.00814 6.882542e-08 -1.106111e-08 
+		  0.01679 1.733641e-07 -7.377623e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 129
+Matvec time for each step:       CPU 523.98s  wall 148.94s 
+Av.n_rows129
+edav 0.00
+                 resid 5.281398950107573e-08 r_conv: 9.999999939225290e-09
+                 resid 5.279355318614093e-08 r_conv: 9.999999939225290e-09
+                 resid 2.444704544748413e-07 r_conv: 9.999999939225290e-09
+  042	  0.00814 5.281399e-08 -7.340514e-09 
+		  0.00814 5.279355e-08 -8.431365e-09 
+		  0.01679 2.444705e-07 -1.325921e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 132
+Matvec time for each step:       CPU 536.18s  wall 152.42s 
+Av.n_rows132
+edav 0.00
+                 resid 7.168785918204605e-08 r_conv: 9.999999939225290e-09
+                 resid 7.413700531607763e-08 r_conv: 9.999999939225290e-09
+                 resid 5.357956588338192e-08 r_conv: 9.999999939225290e-09
+  043	  0.00814 7.168786e-08 -9.342890e-09 
+		  0.00814 7.413701e-08 -1.228291e-08 
+		  0.01679 5.357957e-08 -1.578527e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 135
+Matvec time for each step:       CPU 548.40s  wall 155.89s 
+Av.n_rows135
+edav 0.00
+                 resid 2.314357435224818e-08 r_conv: 9.999999939225290e-09
+                 resid 1.147861505345340e-07 r_conv: 9.999999939225290e-09
+                 resid 1.016449644802474e-07 r_conv: 9.999999939225290e-09
+  044	  0.00814 2.314357e-08 -1.707639e-09 
+		  0.00814 1.147862e-07 -5.805324e-08 
+		  0.01679 1.016450e-07 -4.218187e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 138
+Matvec time for each step:       CPU 560.62s  wall 159.37s 
+Av.n_rows138
+edav 0.00
+                 resid 7.056421309450880e-08 r_conv: 9.999999939225290e-09
+                 resid 6.593264564740439e-08 r_conv: 9.999999939225290e-09
+                 resid 2.115214838394408e-07 r_conv: 9.999999939225290e-09
+  045	  0.00814 7.056421e-08 -1.455740e-08 
+		  0.00814 6.593265e-08 -1.292068e-08 
+		  0.01679 2.115215e-07 -1.239948e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 141
+Matvec time for each step:       CPU 572.83s  wall 162.84s 
+Av.n_rows141
+edav 0.00
+                 resid 5.058725181605974e-08 r_conv: 9.999999939225290e-09
+                 resid 1.494151683281682e-07 r_conv: 9.999999939225290e-09
+                 resid 2.052641957717285e-07 r_conv: 9.999999939225290e-09
+  046	  0.00814 5.058725e-08 -9.532905e-09 
+		  0.00814 1.494152e-07 -6.942032e-08 
+		  0.01679 2.052642e-07 -1.642370e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 144
+Matvec time for each step:       CPU 585.00s  wall 166.30s 
+Av.n_rows144
+edav 0.00
+                 resid 1.230219108862593e-07 r_conv: 9.999999939225290e-09
+                 resid 1.572381372614324e-07 r_conv: 9.999999939225290e-09
+                 resid 6.855979768128245e-08 r_conv: 9.999999939225290e-09
+  047	  0.00814 1.230219e-07 -3.334624e-08 
+		  0.00814 1.572381e-07 -8.060770e-08 
+		  0.01679 6.855980e-08 -1.686500e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 147
+Matvec time for each step:       CPU 597.20s  wall 169.76s 
+Av.n_rows147
+edav 0.00
+                 resid 6.935875724297340e-08 r_conv: 9.999999939225290e-09
+                 resid 3.068738707501525e-08 r_conv: 9.999999939225290e-09
+                 resid 7.386059046084729e-08 r_conv: 9.999999939225290e-09
+  048	  0.00814 6.935876e-08 -1.404565e-08 
+		  0.00814 3.068739e-08 -4.625464e-09 
+		  0.01679 7.386059e-08 -2.179609e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 150
+Matvec time for each step:       CPU 609.39s  wall 173.22s 
+Av.n_rows150
+edav 0.00
+                 resid 1.157229633281080e-07 r_conv: 9.999999939225290e-09
+                 resid 7.451948499985217e-08 r_conv: 9.999999939225290e-09
+                 resid 6.469403523843868e-08 r_conv: 9.999999939225290e-09
+  049	  0.00814 1.157230e-07 -6.093390e-08 
+		  0.00814 7.451948e-08 -2.678809e-08 
+		  0.01679 6.469404e-08 -2.055783e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 153
+Matvec time for each step:       CPU 621.63s  wall 176.71s 
+Av.n_rows153
+edav 0.00
+                 resid 3.699884112463401e-08 r_conv: 9.999999939225290e-09
+                 resid 4.850748192037687e-08 r_conv: 9.999999939225290e-09
+                 resid 1.720393569891459e-07 r_conv: 9.999999939225290e-09
+  050	  0.00814 3.699884e-08 -5.216410e-09 
+		  0.00814 4.850748e-08 -9.684929e-09 
+		  0.01679 1.720394e-07 -2.068141e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 156
+Matvec time for each step:       CPU 633.83s  wall 180.19s 
+Av.n_rows156
+edav 0.00
+                 resid 6.484281148483833e-08 r_conv: 9.999999939225290e-09
+                 resid 2.604501881961944e-08 r_conv: 9.999999939225290e-09
+                 resid 1.258867224261882e-07 r_conv: 9.999999939225290e-09
+  051	  0.00814 6.484281e-08 -3.029808e-08 
+		  0.00814 2.604502e-08 -3.439058e-09 
+		  0.01679 1.258867e-07 -1.062241e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 159
+Matvec time for each step:       CPU 646.03s  wall 183.66s 
+Av.n_rows159
+edav 0.00
+                 resid 6.558361273144519e-09 r_conv: 9.999999939225290e-09
+                 resid 4.655231409832324e-08 r_conv: 9.999999939225290e-09
+                 resid 3.350547252881238e-08 r_conv: 9.999999939225290e-09
+  052	  0.00814 6.558361e-09 -4.788118e-10 
+		  0.00814 4.655231e-08 -1.178089e-08 
+		  0.01679 3.350547e-08 -1.117676e-08 
+		
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 2 number of vectors to Krylov space
+vSPace.n_cols 161
+Matvec time for each step:       CPU 657.79s  wall 187.02s 
+Av.n_rows161
+edav 0.00
+                 resid 1.031940620949094e-08 r_conv: 9.999999939225290e-09
+                 resid 1.114779990983313e-08 r_conv: 9.999999939225290e-09
+                 resid 7.182037763417385e-08 r_conv: 9.999999939225290e-09
+  053	  0.00814 1.031941e-08 -4.810124e-10 
+		  0.00814 1.114780e-08 -7.393665e-10 
+		  0.01679 7.182038e-08 -3.300067e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 164
+Matvec time for each step:       CPU 669.98s  wall 190.48s 
+Av.n_rows164
+edav 0.00
+                 resid 2.035749309025404e-08 r_conv: 9.999999939225290e-09
+                 resid 4.153330194257464e-08 r_conv: 9.999999939225290e-09
+                 resid 1.497167721425437e-07 r_conv: 9.999999939225290e-09
+  054	  0.00814 2.035749e-08 -5.318381e-09 
+		  0.00814 4.153330e-08 -8.929766e-09 
+		  0.01679 1.497168e-07 -9.404441e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 167
+Matvec time for each step:       CPU 682.17s  wall 193.94s 
+Av.n_rows167
+edav 0.00
+                 resid 3.646430653132152e-08 r_conv: 9.999999939225290e-09
+                 resid 1.851295369075478e-08 r_conv: 9.999999939225290e-09
+                 resid 8.833772007876390e-08 r_conv: 9.999999939225290e-09
+  055	  0.00814 3.646431e-08 -8.645253e-09 
+		  0.00814 1.851295e-08 -2.769804e-09 
+		  0.01679 8.833772e-08 -8.687311e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 170
+Matvec time for each step:       CPU 694.36s  wall 197.41s 
+Av.n_rows170
+edav 0.00
+                 resid 4.918742442910553e-08 r_conv: 9.999999939225290e-09
+                 resid 3.108098408330491e-08 r_conv: 9.999999939225290e-09
+                 resid 1.535386632561671e-07 r_conv: 9.999999939225290e-09
+  056	  0.00814 4.918742e-08 -2.078258e-08 
+		  0.00814 3.108098e-08 -1.460020e-08 
+		  0.01679 1.535387e-07 -3.250385e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 173
+Matvec time for each step:       CPU 706.56s  wall 200.88s 
+Av.n_rows173
+edav 0.00
+                 resid 2.278838911586211e-08 r_conv: 9.999999939225290e-09
+                 resid 3.040699429604684e-08 r_conv: 9.999999939225290e-09
+                 resid 2.455283667973609e-07 r_conv: 9.999999939225290e-09
+  057	  0.00814 2.278839e-08 -4.170359e-09 
+		  0.00814 3.040699e-08 -1.160057e-08 
+		  0.01679 2.455284e-07 -5.951355e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 176
+Matvec time for each step:       CPU 718.78s  wall 204.35s 
+Av.n_rows176
+edav 0.00
+                 resid 3.179483610379351e-08 r_conv: 9.999999939225290e-09
+                 resid 3.236138417902653e-08 r_conv: 9.999999939225290e-09
+                 resid 5.062234417703882e-08 r_conv: 9.999999939225290e-09
+  058	  0.00814 3.179484e-08 -9.367485e-09 
+		  0.00814 3.236138e-08 -9.038441e-09 
+		  0.01679 5.062234e-08 -1.957987e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 179
+Matvec time for each step:       CPU 730.99s  wall 207.82s 
+Av.n_rows179
+edav 0.00
+                 resid 2.624740531691417e-08 r_conv: 9.999999939225290e-09
+                 resid 2.647770064228134e-08 r_conv: 9.999999939225290e-09
+                 resid 9.295601953531742e-08 r_conv: 9.999999939225290e-09
+  059	  0.00814 2.624741e-08 -8.087574e-09 
+		  0.00814 2.647770e-08 -1.343316e-08 
+		  0.01679 9.295602e-08 -1.006095e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 182
+Matvec time for each step:       CPU 743.20s  wall 211.29s 
+Av.n_rows182
+edav 0.00
+                 resid 5.675530920977345e-08 r_conv: 9.999999939225290e-09
+                 resid 1.786782456049424e-08 r_conv: 9.999999939225290e-09
+                 resid 1.346780625092554e-07 r_conv: 9.999999939225290e-09
+  060	  0.00814 5.675531e-08 -3.326821e-08 
+		  0.00814 1.786782e-08 -6.459980e-09 
+		  0.01679 1.346781e-07 -2.771738e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 185
+Matvec time for each step:       CPU 755.42s  wall 214.77s 
+Av.n_rows185
+edav 0.00
+                 resid 2.745758892020390e-08 r_conv: 9.999999939225290e-09
+                 resid 4.027137406839628e-08 r_conv: 9.999999939225290e-09
+                 resid 9.416482543350779e-08 r_conv: 9.999999939225290e-09
+  061	  0.00814 2.745759e-08 -8.477871e-09 
+		  0.00814 4.027137e-08 -3.283172e-08 
+		  0.01679 9.416483e-08 -1.419759e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 188
+Matvec time for each step:       CPU 767.71s  wall 218.26s 
+Av.n_rows188
+edav 0.00
+                 resid 5.460941688863482e-08 r_conv: 9.999999939225290e-09
+                 resid 3.970810686014593e-08 r_conv: 9.999999939225290e-09
+                 resid 1.016448089245052e-07 r_conv: 9.999999939225290e-09
+  062	  0.00814 5.460942e-08 -1.788052e-08 
+		  0.00814 3.970811e-08 -2.201191e-08 
+		  0.01679 1.016448e-07 -1.942658e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 191
+Matvec time for each step:       CPU 779.99s  wall 221.76s 
+Av.n_rows191
+edav 0.00
+                 resid 2.906359629889164e-08 r_conv: 9.999999939225290e-09
+                 resid 2.233214360515442e-08 r_conv: 9.999999939225290e-09
+                 resid 9.528030181503353e-08 r_conv: 9.999999939225290e-09
+  063	  0.00814 2.906360e-08 -1.101889e-08 
+		  0.00814 2.233214e-08 -5.733858e-09 
+		  0.01679 9.528030e-08 -1.743077e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 194
+Matvec time for each step:       CPU 792.24s  wall 225.24s 
+Av.n_rows194
+edav 0.00
+                 resid 3.325900202174225e-08 r_conv: 9.999999939225290e-09
+                 resid 4.681626455219096e-09 r_conv: 9.999999939225290e-09
+                 resid 3.145196788373460e-08 r_conv: 9.999999939225290e-09
+  064	  0.00814 3.325900e-08 -1.626635e-08 
+		  0.00814 4.681626e-09 -3.478174e-10 
+		  0.01679 3.145197e-08 -1.308750e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 2
+adding 2 number of vectors to Krylov space
+vSPace.n_cols 196
+Matvec time for each step:       CPU 804.07s  wall 228.62s 
+Av.n_rows196
+edav 0.00
+                 resid 9.085839940247721e-09 r_conv: 9.999999939225290e-09
+                 resid 8.525192677841210e-09 r_conv: 9.999999939225290e-09
+                 resid 4.344434625580793e-08 r_conv: 9.999999939225290e-09
+  065	  0.00814 9.085840e-09 -2.097163e-09 
+		  0.00814 8.525193e-09 -1.957160e-09 
+		  0.01679 4.344435e-08 -4.940020e-08 
+		
+Calculation of residuals for root 2
+adding 1 number of vectors to Krylov space
+vSPace.n_cols 197
+Matvec time for each step:       CPU 815.50s  wall 231.90s 
+Av.n_rows197
+edav 0.00
+                 resid 7.837951210419607e-09 r_conv: 9.999999939225290e-09
+                 resid 1.485110579940673e-08 r_conv: 9.999999939225290e-09
+                 resid 8.536260420649116e-09 r_conv: 9.999999939225290e-09
+  066	  0.00814 7.837951e-09 -1.435643e-09 
+		  0.00814 1.485111e-08 -9.519772e-09 
+		  0.01679 8.536260e-09 -2.932131e-09 
+		
+Calculation of residuals for root 1
+adding 1 number of vectors to Krylov space
+vSPace.n_cols 198
+Matvec time for each step:       CPU 826.91s  wall 235.18s 
+Av.n_rows198
+edav 0.00
+                 resid 7.174934604949761e-09 r_conv: 9.999999939225290e-09
+                 resid 1.522517275673716e-08 r_conv: 9.999999939225290e-09
+                 resid 4.275076484877303e-08 r_conv: 9.999999939225290e-09
+  067	  0.00814 7.174935e-09 -4.815383e-10 
+		  0.00814 1.522517e-08 -1.478552e-08 
+		  0.01679 4.275076e-08 -1.140523e-07 
+		
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 2 number of vectors to Krylov space
+vSPace.n_cols 200
+Matvec time for each step:       CPU 838.70s  wall 238.54s 
+Av.n_rows200
+edav 0.00
+                 resid 1.417763740426808e-08 r_conv: 9.999999939225290e-09
+                 resid 2.516377047377983e-08 r_conv: 9.999999939225290e-09
+                 resid 7.471048915315792e-08 r_conv: 9.999999939225290e-09
+  068	  0.00814 1.417764e-08 -4.635260e-09 
+		  0.00814 2.516377e-08 -2.397548e-08 
+		  0.01679 7.471049e-08 -2.171700e-07 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 203
+Matvec time for each step:       CPU 850.96s  wall 242.04s 
+Av.n_rows203
+edav 0.00
+                 resid 1.433055043141360e-08 r_conv: 9.999999939225290e-09
+                 resid 2.338331575341152e-08 r_conv: 9.999999939225290e-09
+                 resid 4.658714462781774e-08 r_conv: 9.999999939225290e-09
+  069	  0.00814 1.433055e-08 -1.425755e-08 
+		  0.00814 2.338332e-08 -1.649768e-08 
+		  0.01679 4.658714e-08 -5.001139e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 206
+Matvec time for each step:       CPU 863.22s  wall 245.53s 
+Av.n_rows206
+edav 0.00
+                 resid 5.588569060729732e-09 r_conv: 9.999999939225290e-09
+                 resid 2.443469207687490e-08 r_conv: 9.999999939225290e-09
+                 resid 1.044630845737860e-07 r_conv: 9.999999939225290e-09
+  070	  0.00814 5.588569e-09 -1.894246e-09 
+		  0.00814 2.443469e-08 -1.390956e-08 
+		  0.01679 1.044631e-07 -3.368373e-07 
+		
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 2 number of vectors to Krylov space
+vSPace.n_cols 208
+Matvec time for each step:       CPU 875.04s  wall 248.91s 
+Av.n_rows208
+edav 0.00
+                 resid 1.015698615003632e-08 r_conv: 9.999999939225290e-09
+                 resid 1.213875286112269e-08 r_conv: 9.999999939225290e-09
+                 resid 2.878093774057469e-08 r_conv: 9.999999939225290e-09
+  071	  0.00814 1.015699e-08 -5.967869e-09 
+		  0.00814 1.213875e-08 -1.337456e-08 
+		  0.01679 2.878094e-08 -6.635469e-08 
+		
+Calculation of residuals for root 0
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 3 number of vectors to Krylov space
+vSPace.n_cols 211
+Matvec time for each step:       CPU 887.27s  wall 252.38s 
+Av.n_rows211
+edav 0.00
+                 resid 3.236195838911884e-09 r_conv: 9.999999939225290e-09
+                 resid 1.005717209940478e-08 r_conv: 9.999999939225290e-09
+                 resid 2.052996303694056e-08 r_conv: 9.999999939225290e-09
+  072	  0.00814 3.236196e-09 -1.062892e-09 
+		  0.00814 1.005717e-08 -5.940192e-09 
+		  0.01679 2.052996e-08 -4.294903e-08 
+		
+Calculation of residuals for root 1
+Calculation of residuals for root 2
+adding 2 number of vectors to Krylov space
+vSPace.n_cols 213
+Matvec time for each step:       CPU 899.10s  wall 255.76s 
+Av.n_rows213
+edav 0.00
+                 resid 3.501623774691693e-09 r_conv: 9.999999939225290e-09
+                 resid 9.087009232572252e-09 r_conv: 9.999999939225290e-09
+                 resid 1.052796600989657e-08 r_conv: 9.999999939225290e-09
+  073	  0.00814 3.501624e-09 -9.348756e-10 
+		  0.00814 9.087009e-09 -1.052376e-08 
+		  0.01679 1.052797e-08 -1.268560e-08 
+		
+Calculation of residuals for root 2
+adding 1 number of vectors to Krylov space
+vSPace.n_cols 214
+Matvec time for each step:       CPU 910.50s  wall 259.03s 
+Av.n_rows214
+edav 0.00
+                 resid 5.191709344109466e-09 r_conv: 9.999999939225290e-09
+                 resid 8.951671497504059e-09 r_conv: 9.999999939225290e-09
+                 resid 5.032048420845197e-09 r_conv: 9.999999939225290e-09
+  074	  0.00814 5.191709e-09 -1.793462e-09 
+		  0.00814 8.951671e-09 -6.431091e-10 
+		  0.01679 5.032048e-09 -4.568730e-09 
+		
+Davidson converged!
+ NEO-TDDFT time:      CPU 910.64s  wall 259.07s 
+state: 0 excitation energy (eV): 0.2215125231
+state: 0 electron oscillator strength: 0.0000973285
+state: 0 proton oscillator strength: 0.3559025309
+state: 0 total oscillator strength (e+p): 0.3559998594
+state: 0 character: 1.4778 % electron, 98.5222 % proton 
+X: PD(  1)  --> PV(  1) excitation amplitude: 0.5704
+X: PD(  1)  --> PV(  2) excitation amplitude: 0.7858
+X: PD(  1)  --> PV(  5) excitation amplitude: 0.2029
+X: PD(  1)  --> PV(  6) excitation amplitude: 0.1805
+ 
+state: 1 excitation energy (eV): 0.2215133827
+state: 1 electron oscillator strength: 0.0000973299
+state: 1 proton oscillator strength: 0.3559059827
+state: 1 total oscillator strength (e+p): 0.3560033127
+state: 1 character: 1.4778 % electron, 98.5222 % proton 
+X: PD(  1)  --> PV(  1) excitation amplitude: 0.7858
+X: PD(  1)  --> PV(  2) excitation amplitude: 0.5704
+X: PD(  1)  --> PV(  5) excitation amplitude: 0.1805
+X: PD(  1)  --> PV(  6) excitation amplitude: 0.2029
+ 
+state: 2 excitation energy (eV): 0.4568881227
+state: 2 electron oscillator strength: 0.0000958715
+state: 2 proton oscillator strength: 0.3416364051
+state: 2 total oscillator strength (e+p): 0.3417322765
+state: 2 character: 0.7684 % electron, 99.2316 % proton 
+X: PD(  1)  --> PV(  3) excitation amplitude: 0.9136
+X: PD(  1)  --> PV(  3) dexcitation amplitude: 0.1088
+X: PD(  1)  --> PV(  7) excitation amplitude: 0.3765
+X: PD(  1)  --> PV(  9) excitation amplitude: 0.1796
+ 
+ -------------------------------------------------
+         NEO-TDDFT Excitation Energies
+ -------------------------------------------------
+
+ Excited state   1: excitation energy (eV) =    0.2215
+ Total energy for state   1:                -93.4168085372 au
+
+ Excited state   2: excitation energy (eV) =    0.2215
+ Total energy for state   2:                -93.4168085056 au
+
+ Excited state   3: excitation energy (eV) =    0.4569
+ Total energy for state   3:                -93.4081586479 au
+
+NEO-TDDFT time:      CPU 910.67s  wall 259.08s 
+ Total job time:  444.78s(wall), 1461.05s(cpu) 
+ Mon Feb 20 16:01:11 2023
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+

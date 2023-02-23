@@ -1,0 +1,82 @@
+$molecule
+0 1
+N 0.0492158067 0.000 0.000
+C 1.2046693425 0.000 0.000
+H 2.1221148508 0.000 0.000
+$end
+
+$rem
+sym_ignore = 1
+jobtype = force
+input_bohr = false
+method = b3lyp
+neo = true
+neo_epc = epc172
+SCF_ALGORITHM = gdm
+MEM_TOTAL = 10000
+thresh = 14
+s2thresh = 12
+SCF_CONVERGENCE = 12
+NEO_N_SCF_CONVERGENCE = 12
+NEO_E_CONV = 12
+MAX_SCF_CYCLES = 500
+BASIS = mixed
+NEO_PURECART = 2222
+NEO_VPP = 0
+NEO_BASIS_LIN_DEP_THRESH = 8
+$end
+
+$basis
+N 1
+cc-pvdz
+****
+C 2
+cc-pvdz
+****
+H 3
+cc-pv5z
+****
+$end
+
+$neo_basis
+H    3
+S    1    1.000000
+   5.973 1.0
+S    1    1.000000
+   10.645 1.0
+S    1    1.000000
+   17.943 1.0
+S    1    1.000000
+   28.950 1.0
+P    1    1.000000
+   7.604 1.0
+P    1    1.000000
+   14.701 1.0
+P    1    1.000000
+   23.308 1.0
+D    1    1.000000
+   9.011 1.0
+D    1    1.000000
+   19.787 1.0
+F    1    1.000000
+   10.914 1.0
+F    1    1.000000
+   20.985 1.0
+****
+$end
+
+$neo_tdks
+dt 8.0
+maxiter 5167
+field_type delta
+field_amp 0.1
+in_cavity true 0.4573 0 6e-4 1e8
+rt_thresh 2
+update_basis_every_m 1
+update_nuclei_every_n 10
+moving_proton_basis_center false
+moving_classical_nuclei false
+apply_efield_method 2
+scf_e true
+enforce_eh true
+$end

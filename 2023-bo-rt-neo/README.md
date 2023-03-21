@@ -2,7 +2,7 @@
 
 The folders here contain all necessary files to generate figures in the following paper:
 
-- Li, T. E., Hammes-Schiffer, S. Electronic Born-Oppenheimer Approximation in Nuclear-Electronic Orbital Dynamics. [arXiv:2301.04076. **2023**](https://arxiv.org/abs/2301.04076).
+- Li, T. E., Hammes-Schiffer, S. Electronic Born-Oppenheimer Approximation in Nuclear-Electronic Orbital Dynamics. [J. Chem. Phys. **2023**, 158, 114118](https://doi.org/10.1063/5.0142007).
 
 ## File structure
 

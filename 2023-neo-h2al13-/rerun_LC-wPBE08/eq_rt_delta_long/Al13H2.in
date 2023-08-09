@@ -1,0 +1,121 @@
+$molecule
+-1 1
+Al       -0.0313864909   -0.0630009053   -0.0668296680
+Al        0.0792131134    0.0348949681    2.5544875765
+Al        2.2399427300    0.2466354957   -1.3452573999
+Al        1.6841518639    1.6292431988    0.9747971590
+Al       -0.3696898614   -2.3349885253    1.2061009980
+Al        0.9715677624   -2.2061552967   -1.2073037784
+Al       -2.3027802560   -0.3698994660    1.2169938265
+Al       -0.1355959996   -0.1575353679   -2.6893054373
+Al       -1.7483001967   -1.7525608454   -1.1108691425
+Al       -1.0416934178    2.0775892217    1.0697757099
+Al        0.2936475749    2.2109267421   -1.3401831237
+Al        2.0973035163   -1.1084538956    1.0584933894
+Al       -2.1675770703    0.9673243976   -1.1942867874
+H         5.5849023578    0.5701509516    1.6662541095
+H         6.2868943740    0.6159293265    1.9015325683
+$end
+
+$rem
+jobtype = FORCE
+sym_ignore = 1
+input_bohr = false
+method = LC-wPBE08
+SCF_ALGORITHM = GDM
+MAX_SCF_CYCLES=200
+basis = mixed
+NEO_PURECART = 1111
+SCF_CONVERGENCE = 8
+mem_total = 30000
+neo = true
+NEO_E_CONV = 8
+NEO_EPC = epc172
+NEO_VPP = 1
+NEO_BASIS_LIN_DEP_THRESH = 8
+BASIS_LIN_DEP_THRESH = 8
+THRESH = 14
+S2THRESH = 19
+$end
+
+
+$basis
+Al 1
+6-31G(d)
+****
+Al 2
+6-31G(d)
+****
+Al 3
+6-31G(d)
+****
+Al 4
+6-31G(d)
+****
+Al 5
+6-31G(d)
+****
+Al 6
+6-31G(d)
+****
+Al 7
+6-31G(d)
+****
+Al 8
+6-31G(d)
+****
+Al 9
+6-31G(d)
+****
+Al 10
+6-31G(d)
+****
+Al 11
+6-31G(d)
+****
+Al 12
+6-31G(d)
+****
+Al 13
+6-31G(d)
+****
+H 14
+6-31G(d)
+****
+H 15
+6-31G(d)
+****
+$end
+
+
+$neo_basis
+H    14
+S    1    1.000000
+   99999.9 1.0
+****
+H    15
+S    1    1.000000
+   99999.9 1.0
+****
+$end
+
+
+$neo_tdks
+electronic_HOMO2LUMO false
+dt  0.1
+maxiter 82000
+field_type delta
+field_amp 1e-3
+in_cavity false 2.01 2 1e-2 100
+rt_thresh 2
+moving_classical_nuclei false
+moving_proton_basis_center false
+enforce_eh true
+update_basis_every_m 10
+update_nuclei_every_n 1
+proton_basis_gradient_method 0
+moving_proton_basis_center_method 0 
+rescf_method 0
+proton_rk4 false
+do_analytical_gradient false
+$end

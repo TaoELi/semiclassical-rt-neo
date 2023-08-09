@@ -1,0 +1,156 @@
+$molecule
+-1 1
+Al       -0.0076149579   -0.0594393948   -0.0612532759
+Al        0.1100612801    0.0391824950    2.6017321793
+Al        2.2969663769    0.2547870494   -1.3687172625
+Al        1.7400191639    1.6579354999    0.9919651122
+Al       -0.3410218476   -2.3674176583    1.2363305942
+Al        1.0143269271   -2.2350520893   -1.2198641008
+Al       -2.3116139766   -0.3722591548    1.2466442815
+Al       -0.1230751653   -0.1568696654   -2.7243665504
+Al       -1.7499711685   -1.7825865157   -1.1137686382
+Al       -1.0274039842    2.1165891976    1.0959426228
+Al        0.3222713293    2.2497567997   -1.3562485783
+Al        2.1616307743   -1.1177941320    1.0753084860
+Al       -2.1795950720    0.9896140559   -1.1999103129
+H         5.4084749848    0.5507069920    1.6259547435
+H         6.1271453353    0.5929465211    1.8646506990
+$end
+
+$rem
+jobtype = FORCE
+sym_ignore = 1
+input_bohr = false
+method = pbe
+SCF_ALGORITHM = GDM
+MAX_SCF_CYCLES=200
+basis = mixed
+NEO_PURECART = 1111
+SCF_CONVERGENCE = 8
+mem_total = 30000
+neo = true
+NEO_E_CONV = 8
+NEO_EPC = epc172
+NEO_VPP = 1
+NEO_BASIS_LIN_DEP_THRESH = 8
+BASIS_LIN_DEP_THRESH = 8
+THRESH = 14
+S2THRESH = 19
+NEO_ISOTOPE = 2
+MAKE_CUBE_FILES = true
+plots = true
+$end
+
+
+$basis
+Al 1
+6-31G(d,p)
+****
+Al 2
+6-31G(d,p)
+****
+Al 3
+6-31G(d,p)
+****
+Al 4
+6-31G(d,p)
+****
+Al 5
+6-31G(d,p)
+****
+Al 6
+6-31G(d,p)
+****
+Al 7
+6-31G(d,p)
+****
+Al 8
+6-31G(d,p)
+****
+Al 9
+6-31G(d,p)
+****
+Al 10
+6-31G(d,p)
+****
+Al 11
+6-31G(d,p)
+****
+Al 12
+6-31G(d,p)
+****
+Al 13
+6-31G(d,p)
+****
+H 14
+6-31G(d,p)
+****
+H 15
+6-31G(d,p)
+****
+$end
+
+$neo_basis
+H    14
+S    1    1.000000
+   2.768 1.0
+S    1    1.000000
+   12.352 1.0
+S    1    1.000000
+   22.642 1.0
+S    1    1.000000
+   45.251 1.0
+P    1    1.000000
+   13.347 1.0
+P    1    1.000000
+   19.509 1.0
+P    1    1.000000
+   33.981 1.0
+D    1    1.000000
+   14.883 1.0
+D    1    1.000000
+   26.893 1.0
+****
+H    15
+S    1    1.000000
+   2.768 1.0
+S    1    1.000000
+   12.352 1.0
+S    1    1.000000
+   22.642 1.0
+S    1    1.000000
+   45.251 1.0
+P    1    1.000000
+   13.347 1.0
+P    1    1.000000
+   19.509 1.0
+P    1    1.000000
+   33.981 1.0
+D    1    1.000000
+   14.883 1.0
+D    1    1.000000
+   26.893 1.0
+****
+$end
+
+$neo_tdks
+electronic_HOMO2LUMO false
+dt  0.1
+maxiter 9000
+field_type gaussian 0.0 800.0 6.0
+field_amp 5e-3
+in_cavity false 2.01 2 1e-2 100
+rt_thresh 2
+moving_classical_nuclei false
+moving_proton_basis_center true
+enforce_eh true
+update_basis_every_m 10
+update_nuclei_every_n 1
+proton_basis_gradient_method 0
+moving_proton_basis_center_method 0 
+rescf_method 0
+proton_rk4 false
+do_analytical_gradient false
+save_per_iter 400
+plt_params 80 -10.0 20.0
+$end

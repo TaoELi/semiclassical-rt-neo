@@ -1,0 +1,127 @@
+$molecule
+-1 1
+Al        0.0194668942   -0.0565629324   -0.0541696795
+Al        0.1393613970    0.0430941459    2.6182131383
+Al        2.3304389726    0.2593834481   -1.3701245079
+Al        1.7748660121    1.6669589120    1.0003587251
+Al       -0.3076188550   -2.3726696705    1.2481870851
+Al        1.0453759096   -2.2380704081   -1.2166612973
+Al       -2.2883817488   -0.3709469263    1.2616236685
+Al       -0.1008003864   -0.1556187866   -2.7249542771
+Al       -1.7297136498   -1.7860212581   -1.1059017183
+Al       -1.0005762261    2.1277528429    1.1080140440
+Al        0.3501335482    2.2594671879   -1.3541425277
+Al        2.1994152289   -1.1116354518    1.0846250213
+Al       -2.1606373690    0.9971111560   -1.1924809407
+H         5.2259882038    0.5238007400    1.5831947409
+H         5.9432820688    0.5740570006    1.8086185250
+$end
+
+$rem
+jobtype = FORCE
+sym_ignore = 1
+input_bohr = false
+method = pbe
+SCF_ALGORITHM = GDM
+MAX_SCF_CYCLES=200
+basis = mixed
+NEO_PURECART = 1111
+SCF_CONVERGENCE = 8
+mem_total = 30000
+neo = true
+NEO_E_CONV = 8
+NEO_EPC = epc172
+NEO_VPP = 1
+NEO_BASIS_LIN_DEP_THRESH = 8
+BASIS_LIN_DEP_THRESH = 8
+THRESH = 14
+S2THRESH = 19
+NEO_ISOTOPE = 2
+DFT_D = D3
+MAKE_CUBE_FILES = true
+plots = true
+$end
+
+
+$basis
+Al 1
+6-31G(d,p)
+****
+Al 2
+6-31G(d,p)
+****
+Al 3
+6-31G(d,p)
+****
+Al 4
+6-31G(d,p)
+****
+Al 5
+6-31G(d,p)
+****
+Al 6
+6-31G(d,p)
+****
+Al 7
+6-31G(d,p)
+****
+Al 8
+6-31G(d,p)
+****
+Al 9
+6-31G(d,p)
+****
+Al 10
+6-31G(d,p)
+****
+Al 11
+6-31G(d,p)
+****
+Al 12
+6-31G(d,p)
+****
+Al 13
+6-31G(d,p)
+****
+H 14
+6-31G(d,p)
+****
+H 15
+6-31G(d,p)
+****
+$end
+
+
+$neo_basis
+H    14
+S    1    1.000000
+   99999.9 1.0
+****
+H    15
+S    1    1.000000
+   99999.9 1.0
+****
+$end
+
+
+$neo_tdks
+electronic_HOMO2LUMO false
+dt  0.1
+maxiter 8200
+field_type gaussian 0.0 800.0 6.0
+field_amp 1.6e-2
+in_cavity false 2.01 2 1e-2 100
+rt_thresh 2
+moving_classical_nuclei false
+moving_proton_basis_center true
+enforce_eh true
+update_basis_every_m 10
+update_nuclei_every_n 1
+proton_basis_gradient_method 0
+moving_proton_basis_center_method 0 
+rescf_method 0
+proton_rk4 false
+do_analytical_gradient false
+save_per_iter 400
+plt_params 80 -10.0 20.0
+$end

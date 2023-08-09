@@ -3,8 +3,8 @@ Created by Tao E. Li for scientific plotting @ 2021
 '''
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib as mpl
-#mpl.use('pdf')
+import matplotlib.image as mpimg
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 
 # global variables for personal colors
 red = "#EA4E34"
@@ -16,9 +16,10 @@ brown = "#7B2B15"
 red_economist = "#E3000F"
 black = "k"
 dark_green = "#285F17"
-meganta = "#907DAC"
+magenta = "#907DAC"
 lightblue_background = "#D9E5EC"
 lightgray_background = "#F6F6F4"
+
 
 def initialize(col=1, row=1, width=4,
                height=None,
@@ -28,18 +29,48 @@ def initialize(col=1, row=1, width=4,
                commonY=None,
                commonYs=None,
                labelthem=None,
-               labelsize=None,
+               labelsize=11,
                labelthemPosition=None,
-               fontsize=8,
+               fontsize=10,
+               fontname="Helvetica",
                return_fig_args=False,
                LaTeX=False
                ):
+    '''
+    Initialize the plotting environment
+    
+    Args:
+    
+    col: number of plots in the vertical direction 
+    row: number of plots in the horizontal direction
+    width: width of the whole figure in inches
+    height: hight of whole figure in inches, default value: 0.618 * width
+    sharex: if sharing the x axis for all subplots, e.g., all figures have the same x variable
+    sharey: if sharing the y axis for all subplots, e.g., all figures have the same y variable
+    commonX: [x, y, "x label"], x, y: relative location of the x label in the figure
+    commonY: [x, y, "y label"], x, y: relative location of the y label in the figure
+    commonYs: [commonY, commonY, ...], in case there are many y labels to be labeled
+    labelthem: True/False, if label (a), (b), ... for each subplot
+    labelsize: font size of the (a), (b), ... labels
+    labelthemPosition: [x, y]: relative location of the (a), (b) ... label in each subplot
+    fontsize: fontsize of the x, y labels for the whole figure
+    return_fig_args: False: axes = initialize(); True: fig, axes = initialize()
+    LaTeX: True/False, if use LaTeX rendering option
+    '''
+
+    plt.rcParams['font.family'] = 'sans-serif'
+    plt.rcParams['font.sans-serif'] = fontname
+    plt.rcParams['text.usetex'] = LaTeX
+    plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}\boldmath\usepackage{helvet}\renewcommand{\familydefault}{\sfdefault}'
+    plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}\usepackage{helvet}\renewcommand{\familydefault}{\sfdefault}'
+    plt.rcParams['axes.unicode_minus'] = False
     plt.rcParams['mathtext.fontset'] = 'custom'
-    plt.rcParams['mathtext.it'] = 'Helvetica'
-    plt.rcParams['mathtext.rm'] = 'Helvetica'
-    plt.rc('font', family='sans-serif', serif='Helvetica')
-    #plt.rc('font', family='sans-serif', serif='Osaka')
-    plt.rc('text', usetex=LaTeX)
+    plt.rcParams['mathtext.fontset'] = 'stixsans'
+    plt.rcParams['mathtext.rm'] = '{}'.format(fontname)
+    plt.rcParams['mathtext.it'] = '{}:italic'.format(fontname)
+    plt.rcParams['mathtext.bf'] = '{}:bold'.format(fontname)
+
+    #plt.rcParams['text.latex.preamble'] = r'\usepackage{helvet}\renewcommand{\familydefault}{\sfdefault}'
     plt.rc('xtick', labelsize=fontsize)
     plt.rc('ytick', labelsize=fontsize)
     plt.rc('axes', labelsize=fontsize)
@@ -100,6 +131,7 @@ def initialize(col=1, row=1, width=4,
     else:
         return axes
 
+
 def initialize_gridSpec(col=1, row=1, width=4,
                height=None,
                fontsize=8,
@@ -147,6 +179,7 @@ def plotone(
     legendFontSize=None,
     legndFrameOn=True,
     legendFancyBox=True,
+    legendloc=None,
     legendFaceColor="inherit",
     legendEdgeColor="inherit",
     rainbowColor=False,
@@ -205,10 +238,6 @@ def plotone(
         ax.xaxis.set_ticks_position('both')
         ax.yaxis.set_ticks_position('both')
     # Save file
-    if showlegend:
-        ax.legend(fontsize=legendFontSize, markerscale=legendFontSize,
-            frameon=legndFrameOn, fancybox=legendFancyBox,
-            facecolor=legendFaceColor, edgecolor=legendEdgeColor)
     if sharewhichx != None:
         ax.get_shared_x_axes().join(sharewhichx, ax)
         sharewhichx.set_xticklabels([])
@@ -223,7 +252,29 @@ def plotone(
     if linestyles != None:
         for i,j in enumerate(ax.lines):
             j.set_linestyle(linestyles[i])
+    if showlegend:
+        ax.legend(fontsize=legendFontSize, markerscale=legendFontSize,
+            frameon=legndFrameOn, fancybox=legendFancyBox,
+            facecolor=legendFaceColor, edgecolor=legendEdgeColor,
+            loc=legendloc)
     return lines
+
+
+def add_figure(imag_filename, ax, zoom=0.16, location=(0.0, 0.0)):
+    '''
+    Add a figure on top of the plot
+
+    Args:
+    imag_filename: filename of the imag
+    ax: axis of the subplot
+    zoom: 0.0 ~ 1.0 floating point to control the size of the inset figure
+    location: (x, y), a tuple to set the location of the figure in the units of the axis values
+    '''
+    data_img = mpimg.imread(imag_filename)
+    imagebox = OffsetImage(data_img, zoom=zoom)
+    ab = AnnotationBbox(imagebox, location, frameon=False)
+    ab.set(zorder=-1)
+    ax.add_artist(ab)
 
 def broken_y(ax, ax2, d=0.015, ymin_0=0, ymax_0=0.22, ymin_1=0.78, ymax_1=1.0):
     # zoom-in / limit the view to different portions of the data
@@ -250,6 +301,20 @@ def broken_y(ax, ax2, d=0.015, ymin_0=0, ymax_0=0.22, ymin_1=0.78, ymax_1=1.0):
     ax2.plot((-d, +d), (1 - d, 1 + d), **kwargs)  # bottom-left diagonal
     ax2.plot((1 - d, 1 + d), (1 - d, 1 + d), **kwargs)  # bottom-right diagonal
 
+
+def subplots_adjust(left=0.1, right=0.9, bottom=0.1, top=0.9, wspace=0.2):
+    '''
+    Adjust the subplot layout for each figure
+    :param left:
+    :param right:
+    :param bottom:
+    :param top:
+    :param wspace:
+    :return:
+    '''
+    plt.subplots_adjust(left=left, right=right, bottom=bottom, top=top, wspace=wspace)
+
+
 def adjust(
     wspace=0,
     hspace=0,
@@ -257,7 +322,6 @@ def adjust(
     savefile=None,
     includelegend=None
     ):
-    #plt.subplots_adjust(wspace=wspace, hspace=hspace)
     if tight_layout == True:
         plt.tight_layout()
     if savefile != None and includelegend == None:

@@ -1,0 +1,806 @@
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 5.4 (devel), Q-Chem, Inc., Pleasanton, CA (2021)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  B. Alam,  B. Albrecht,  
+ A. Aldossary,  E. Alguire,  J. H. Andersen,  D. Barton,  K. Begam,  A. Behn,  
+ Y. A. Bernard,  E. J. Berquist,  H. Burton,  A. Carreras,  K. Carter-Fenk,  
+ R. Chakraborty,  A. D. Chien,  K. D. Closser,  V. Cofer-Shabica,  
+ S. Dasgupta,  Jia Deng,  M. de Wergifosse,  M. Diedenhofen,  Hainam Do,  
+ S. Ehlert,  Po-Tung Fang,  S. Fatehi,  Qingguo Feng,  T. Friedhoff,  
+ J. Gayvert,  Qinghui Ge,  G. Gidofalvi,  M. Goldey,  J. Gomes,  
+ C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  M. W. D. Hanson-Heine,  
+ P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  M. Hernandez Vera,  
+ M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  Kerwin Hui,  
+ B. C. Huynh,  M. Ivanov,  Hyunjun Ji,  Hanjie Jiang,  B. Kaduk,  S. Kaehler,  
+ K. Khistyaev,  Jaehoon Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  D. Kosenkov,  L. Koulias,  T. Kowalczyk,  C. M. Krauter,  
+ K. Kue,  A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  D. Lefrancois,  
+ S. Lehtola,  Rain Li,  Yi-Pei Li,  Jiashu Liang,  M. Liebenthal,  
+ Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  Kuan-Yu Liu,  
+ M. Loipersberger,  A. Luenser,  A. Manjanath,  P. Manohar,  E. Mansoor,  
+ S. F. Manzer,  Shan-Ping Mao,  A. V. Marenich,  T. Markovich,  S. Mason,  
+ S. A. Maurer,  P. F. McLaughlin,  M. F. S. J. Menger,  J.-M. Mewes,  
+ S. A. Mewes,  P. Morgante,  J. W. Mullinax,  K. J. Oosterbaan,  G. Paran,  
+ Alexander C. Paul,  Suranjan K. Paul,  F. Pavosevic,  Zheng Pei,  S. Prager,  
+ E. I. Proynov,  E. Ramos,  B. Rana,  A. E. Rask,  A. Rettig,  R. M. Richard,  
+ F. Rob,  E. Rossomme,  T. Scheele,  M. Scheurer,  M. Schneider,  
+ N. Sergueev,  S. M. Sharada,  W. Skomorowski,  D. W. Small,  C. J. Stein,  
+ Yu-Chuan Su,  E. J. Sundstrom,  Zhen Tao,  J. Thirman,  T. Tsuchimochi,  
+ N. M. Tubman,  S. P. Veccham,  O. Vydrov,  J. Wenzel,  J. Witte,  A. Yamada,  
+ Kun Yao,  S. Yeganeh,  S. R. Yost,  A. Zech,  Igor Ying Zhang,  Xing Zhang,  
+ Yu Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  N. A. Besley,  
+ K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  S. Coriani,  
+ C. J. Cramer,  A. E. DePrince, III,  R. A. DiStasio Jr.,  A. Dreuw,  
+ B. D. Dunietz,  T. R. Furlani,  W. A. Goddard III,  S. Grimme,  
+ S. Hammes-Schiffer,  T. Head-Gordon,  W. J. Hehre,  Chao-Ping Hsu,  
+ T.-C. Jagau,  Yousung Jung,  A. Klamt,  Jing Kong,  D. S. Lambrecht,  
+ WanZhen Liang,  N. J. Mayhall,  C. W. McCurdy,  J. B. Neaton,  
+ C. Ochsenfeld,  J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Yihan Shao,  
+ L. V. Slipchenko,  T. Stauch,  R. P. Steele,  J. E. Subotnik,  
+ A. J. W. Thom,  A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  
+ T. A. Wesolowski,  K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  
+ S. Faraji,  P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Additional authors for Version 5.4.1: 
+ S. Kotaru,  Shaozhi Li,  Xiangyuan Li,  F. Matz,  A. Molle,  Haisheng Ren,  
+ Yingli Su,  Hung-Yi Tsai,  C. Utku,  Fang Wang
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  A. K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+ Please cite Q-Chem as follows:
+ Y. Shao et al., Mol. Phys. 113, 184-215 (2015)
+ DOI: 10.1080/00268976.2014.952696
+
+ Q-Chem 5.4.1 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.900.5 (Nocturnal Misbehaviour).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Fri Aug  4 08:33:56 2023  
+
+ Host: p09r13n09.grace.hpc.yale.internal
+0
+
+     Scratch files written to /home/tl686/palmer_scratch/qchem_dev/scratch/qchem149753//
+ Processing $rem in /home/tl686/qchem_dev/qchem/config/preferences:
+ Processing $rem in /home/tl686/.qchemrc:
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
++1 1
+H      0.000000    0.000000    4.422000000000001
+Au     0.000000    0.000000    2.222000
+Au    -1.392000    0.000000    0.000000
+Au     1.393000    0.000000    0.000000
+Au     0.000000    0.000000   -2.411000
+Au     2.626000    0.000000   -2.315000
+Au    -2.614000    0.000000   -2.320000
+Au     0.000000    0.000000    6.622
+Au    -1.392000    0.000000    8.844
+Au     1.393000    0.000000    8.844
+Au     0.000000    0.000000    11.254999999999999
+Au     2.626000    0.000000    11.158999999999999
+Au    -2.614000    0.000000    11.164
+$end
+$rem
+jobtype = sp
+sym_ignore = false
+input_bohr = false
+method = b3lyp
+SCF_ALGORITHM = GDM
+MAX_SCF_CYCLES=500
+SCF_CONVERGENCE = 8
+MEM_TOTAL = 100000 
+ECP = fit-LANL2DZ
+basis = general
+NEO = TRUE
+NEO_EPC = epc172
+NEO_PURECART = 1111 
+NEO_VPP = 0
+NEO_N_SCF_CONVERGENCE = 8
+NEO_E_CONV = 8
+MAKE_CUBE_FILES = true
+plots = true
+$end
+
+
+$basis
+   H 0
+   def2-qzvp
+   ****
+   Au 0
+   LANL2DZ
+   ****
+$end
+
+$neo_basis
+H    1
+S    1    1.000000
+   5.973 1.0
+S    1    1.000000
+   10.645 1.0
+S    1    1.000000
+   17.943 1.0
+S    1    1.000000
+   28.950 1.0
+P    1    1.000000
+   7.604 1.0
+P    1    1.000000
+   14.701 1.0
+P    1    1.000000
+   23.308 1.0
+D    1    1.000000
+   9.011 1.0
+D    1    1.000000
+   19.787 1.0
+F    1    1.000000
+   10.914 1.0
+F    1    1.000000
+   20.985 1.0
+****
+$end
+
+$neo_tdks
+dt  0.1
+maxiter 1
+field_type delta
+field_amp 0e-2
+in_cavity false 2.01 2 1e-2 100
+rt_thresh 2
+moving_classical_nuclei false
+moving_proton_basis_center false
+save_per_iter 400
+plt_params 80 -10.0 10.0
+enforce_eh true
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      H       0.0000000000     0.0000000000     0.0021643836
+    2      Au     -2.2000000000     0.0000000000     0.0021643836
+    3      Au     -4.4220000000     0.0000000000     1.3941643836
+    4      Au     -4.4220000000     0.0000000000    -1.3908356164
+    5      Au     -6.8330000000     0.0000000000     0.0021643836
+    6      Au     -6.7370000000     0.0000000000    -2.6238356164
+    7      Au     -6.7420000000     0.0000000000     2.6161643836
+    8      Au      2.2000000000    -0.0000000000     0.0021643836
+    9      Au      4.4220000000    -0.0000000000     1.3941643836
+   10      Au      4.4220000000    -0.0000000000    -1.3908356164
+   11      Au      6.8330000000    -0.0000000000     0.0021643836
+   12      Au      6.7370000000    -0.0000000000    -2.6238356164
+   13      Au      6.7420000000    -0.0000000000     2.6161643836
+ ----------------------------------------------------------------
+ Molecular Point Group                 C2v   NOp =  4
+ Largest Abelian Subgroup              C2v   NOp =  4
+ Nuclear Repulsion Energy =        2467.22487168 hartrees
+ There are      114 alpha and      114 beta electrons
+ Requested basis set is non-standard
+ There are 106 shells and 294 basis functions
+
+ Total QAlloc Memory Limit 100000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+                       Distance Matrix (Angstroms)
+             H (  1)   Au(  2)   Au(  3)   Au(  4)   Au(  5)   Au(  6)
+   Au(  2)  2.200000
+   Au(  3)  4.635919  2.622012
+   Au(  4)  4.636220  2.622543  2.785000
+   Au(  5)  6.833000  4.633000  2.783987  2.784487
+   Au(  6)  7.230702  5.242160  4.637192  2.622883  2.627754
+   Au(  7)  7.231014  5.240492  2.622153  4.630167  2.615583  5.240002
+   Au(  8)  2.200000  4.400000  6.766724  6.766929  9.033000  9.314819
+   Au(  9)  4.635919  6.766724  8.844000  9.272139 11.340753 11.860337
+   Au( 10)  4.636220  6.766929  9.272139  8.844000 11.340876 11.226913
+   Au( 11)  6.833000  9.033000 11.340753 11.340876 13.666000 13.821750
+   Au( 12)  7.230702  9.314819 11.860337 11.226913 13.821750 13.474000
+   Au( 13)  7.231014  9.316242 11.230680 11.861321 13.824385 14.461709
+             Au(  7)   Au(  8)   Au(  9)   Au( 10)   Au( 11)   Au( 12)
+   Au(  8)  9.316242
+   Au(  9) 11.230680  2.622012
+   Au( 10) 11.861321  2.622543  2.785000
+   Au( 11) 13.824385  4.633000  2.783987  2.784487
+   Au( 12) 14.461709  5.242160  4.637192  2.622883  2.627754
+   Au( 13) 13.484000  5.240492  2.622153  4.630167  2.615583  5.240002
+
+
+ A cutoff of  1.0D-12 yielded   4117 shell pairs
+ There are     31529 function pairs (     37756 Cartesian)
+ Requested basis set is non-standard
+ Compound shells will be simplified
+ There are 106 shells and 294 basis functions
+ A cutoff of  1.0D-12 yielded   4117 shell pairs
+ There are     31529 function pairs (     37756 Cartesian)
+ Smallest overlap matrix eigenvalue = 4.54E-04
+
+ Scale SEOQF with 1.000000e-02/1.000000e-01/1.000000e-01
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000471 hartrees
+ ================ Generating on-the-fly SAD Guess ================
+Attempting to make child job directory: /home/tl686/palmer_scratch/qchem_dev/scratch/qchem149753//Frg1/
+Attempting to make child job directory: /home/tl686/palmer_scratch/qchem_dev/scratch/qchem149753//Frg2/
+Creating input file /home/tl686/palmer_scratch/qchem_dev/scratch/qchem149753/Frg1.input
+using default PutDataFrgm: nothing
+calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch/qchem149753/ 
+Spawning Job For Fragment 0
+Done Job For Fragment 0
+calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch 
+calling putenv with: QCTHREADS=32 
+Creating input file /home/tl686/palmer_scratch/qchem_dev/scratch/qchem149753/Frg2.input
+using default PutDataFrgm: nothing
+calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch/qchem149753/ 
+Spawning Job For Fragment 1
+Done Job For Fragment 1
+calling putenv with: QCSCRATCH=/home/tl686/palmer_scratch/qchem_dev/scratch 
+calling putenv with: QCTHREADS=32 
+ Time for running child jobs:  CPU 0.01 s  wall 9.35 s
+ ============= Method Specific SAD Guess Constructed =============
+ Guess from on-the-fly superposition of atomic densities
+ Warning: Energy on first SCF cycle will be non-variational
+
+ -----------------------------------------------------------------------
+  General SCF calculation program by
+  Eric Jon Sundstrom, Paul Horn, Yuezhi Mao, Dmitri Zuev, Alec White,
+  David Stuck, Shaama M.S., Shane Yost, Joonho Lee, David Small,
+  Daniel Levine, Susi Lehtola, Hugh Burton, Evgeny Epifanovsky,
+  Bang C. Huynh
+ -----------------------------------------------------------------------
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using SG-1 standard quadrature grid
+ using 32 threads for integral computing
+ -------------------------------------------------------
+ OpenMP Integral computing Module                
+ Release: version 1.0, May 2013, Q-Chem Inc. Pittsburgh 
+ -------------------------------------------------------
+ A restricted SCF calculation will be
+ performed using Roothaan-Hall, GDM
+ SCF converges when RMS gradient is below 1.0e-08
+ ---------------------------------------
+  Cycle       Energy         DIIS error
+ ---------------------------------------
+    1   -1627.9796004024      1.59e-02  Roothaan Step
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.1674694124      5.28e-02   Normal BFGS step
+    2   -1626.1335044915      1.92e-01  Line search: overstep
+    3   -1626.2065596531      2.22e-02   Normal BFGS step
+    4   -1626.2038926109      6.69e-02  Line search: overstep
+    5   -1626.2095537606      1.18e-02   Normal BFGS step
+    6   -1626.2098217458      1.17e-02   Normal BFGS step
+    7   -1626.2104196138      4.27e-03   Normal BFGS step
+    8   -1626.2105478733      2.00e-03   Normal BFGS step
+    9   -1626.2106160033      1.15e-03   Normal BFGS step
+   10   -1626.2106255319      6.92e-04   Normal BFGS step
+   11   -1626.2106331143      4.07e-04   Normal BFGS step
+   12   -1626.2106331459      5.97e-04   Normal BFGS step
+   13   -1626.2106340755      6.68e-05   Normal BFGS step
+   14   -1626.2106340949      7.80e-05   Normal BFGS step
+   15   -1626.2106341213      4.67e-05   Normal BFGS step
+   16   -1626.2106341309      1.84e-05   Normal BFGS step
+   17   -1626.2106341368      2.82e-06   Normal BFGS step
+   18   -1626.2106341371      7.11e-07   Normal BFGS step
+   19   -1626.2106341373      5.96e-07   Normal BFGS step
+   20   -1626.2106341372      5.04e-07   Normal BFGS step
+   21   -1626.2106341374      7.44e-08   Normal BFGS step
+   22   -1626.2106341375      3.30e-08   Normal BFGS step
+   23   -1626.2106341377      3.93e-08   Normal BFGS step
+   24   -1626.2106341378      5.85e-08   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 4.04e-09
+   25   -1626.2106341383      5.54e-09  Convergence criterion met
+ ---------------------------------------
+ SCF time:   CPU 1346.22s  wall 47.00s 
+ SCF   energy in the final basis set =    -1626.2106341383
+ Total energy in the final basis set =    -1626.2106341383
+
+ ---------------------------------------
+ Restricted NEO-SCF calculation
+ ---------------------------------------
+ VPP is set to false! Use this only in the case of one quantum hydrogen
+ This NEO calculation is using proton isotope
+ Electronic basis set linear dependency threshold: 10E-6.0000000000
+ Nuclear basis set linear dependency threshold: 10E-5.0000000000
+ 2 particle integral threshold: 10E-12
+ Requested basis set is non-standard
+ There are 11 shells and 37 basis functions
+ NEO centers: 1 
+charge 0.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+charge 19.0000000000
+There are 1 number of quantum nuclei
+ Number of electronic ao: 294  Number of electronic mo294
+ Number of nuclear ao: 37  Number of nuclear mo37
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using SG-1 standard quadrature grid
+ Grid_batch_sz128
+ Dft_grid_thresh 12
+ Grid/integral threshold: 10E-12
+ Read electronic density from eSCF
+ NEO-SCF calculation will be performed using Roothaan-Hall, GDM
+ NEO-SCF Cycles 1
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1    2440.0659817602      5.27e-15   Normal BFGS step
+    2    2440.0659817602      5.27e-15  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.1761035214      2.59e-02   Normal BFGS step
+    2   -1626.1718021446      6.00e-02  Line search: overstep
+    3   -1626.1769548804      9.51e-03   Normal BFGS step
+    4   -1626.1769347466      4.51e-03  Line search: overstep
+    5   -1626.1770529654      4.87e-03   Normal BFGS step
+    6   -1626.1770723818      2.13e-03   Normal BFGS step
+    7   -1626.1770786126      5.96e-04   Normal BFGS step
+    8   -1626.1770803401      6.18e-04   Normal BFGS step
+    9   -1626.1770815949      6.73e-05   Normal BFGS step
+   10   -1626.1770816754      9.74e-05   Normal BFGS step
+   11   -1626.1770817403      1.40e-05   Normal BFGS step
+   12   -1626.1770817393      1.97e-05   Normal BFGS step
+   13   -1626.1770817424      3.22e-06   Normal BFGS step
+   14   -1626.1770817425      2.28e-06   Normal BFGS step
+   15   -1626.1770817426      1.44e-06   Normal BFGS step
+   16   -1626.1770817426      2.11e-06   Normal BFGS step
+   17   -1626.1770817426      3.99e-08   Normal BFGS step
+   18   -1626.1770817426      3.30e-08   Normal BFGS step
+   19   -1626.1770817426      5.21e-08   Normal BFGS step
+   20   -1626.1770817426      7.51e-08   Normal BFGS step
+   21   -1626.1770817426      1.20e-08   Normal BFGS step
+   22   -1626.1770817426      1.09e-08   Normal BFGS step
+   23   -1626.1770817426      4.03e-10   Normal BFGS step
+   24   -1626.1770817426      4.03e-10  Convergence criterion met
+ NEO-SCF Cycles 2
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.2019607388      5.25e-02   Normal BFGS step
+    2   -1626.2041991467      1.41e-02   Normal BFGS step
+    3   -1626.2043848863      2.75e-03   Normal BFGS step
+    4   -1626.2043979027      2.86e-04   Normal BFGS step
+    5   -1626.2043979723      5.58e-05   Normal BFGS step
+    6   -1626.2043979742      7.66e-06   Normal BFGS step
+    7   -1626.2043979742      1.17e-06   Normal BFGS step
+    8   -1626.2043979742      2.22e-07   Normal BFGS step
+    9   -1626.2043979742      1.60e-08   Normal BFGS step
+   10   -1626.2043979742      8.31e-09   Normal BFGS step
+   11   -1626.2043979742      8.31e-09  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.2044721033      1.76e-03   Normal BFGS step
+    2   -1626.2044501222      4.77e-03  Line search: overstep
+    3   -1626.2044758535      6.00e-04   Normal BFGS step
+    4   -1626.2044759108      3.04e-04   Normal BFGS step
+    5   -1626.2044763916      1.94e-04   Normal BFGS step
+    6   -1626.2044764090      5.96e-05   Normal BFGS step
+    7   -1626.2044764381      4.58e-05   Normal BFGS step
+    8   -1626.2044764431      2.67e-05   Normal BFGS step
+    9   -1626.2044764449      5.19e-06   Normal BFGS step
+   10   -1626.2044764451      5.13e-06   Normal BFGS step
+   11   -1626.2044764452      9.02e-07   Normal BFGS step
+   12   -1626.2044764452      1.87e-06   Normal BFGS step
+   13   -1626.2044764452      2.29e-07   Normal BFGS step
+   14   -1626.2044764452      3.89e-07   Normal BFGS step
+   15   -1626.2044764452      4.89e-08   Normal BFGS step
+   16   -1626.2044764452      6.06e-08   Normal BFGS step
+   17   -1626.2044764452      1.93e-08   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.52e-09
+   18   -1626.2044764452      6.28e-08   Normal BFGS step
+   19   -1626.2044764452      7.49e-10   Normal BFGS step
+   20   -1626.2044764452      7.49e-10  Convergence criterion met
+ NEO-SCF Cycles 3
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.2044776801      1.26e-03   Normal BFGS step
+    2   -1626.2044788934      4.18e-04   Normal BFGS step
+    3   -1626.2044790695      6.22e-05   Normal BFGS step
+    4   -1626.2044790737      5.12e-06   Normal BFGS step
+    5   -1626.2044790738      8.41e-07   Normal BFGS step
+    6   -1626.2044790738      2.07e-07   Normal BFGS step
+    7   -1626.2044790738      3.55e-08   Normal BFGS step
+    8   -1626.2044790738      8.84e-09   Normal BFGS step
+    9   -1626.2044790738      8.84e-09  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.2044791669      2.58e-04   Normal BFGS step
+    2   -1626.2044787311      6.78e-04  Line search: overstep
+    3   -1626.2044792499      8.88e-05   Normal BFGS step
+    4   -1626.2044792489      4.42e-05   Normal BFGS step
+    5   -1626.2044792618      2.44e-05   Normal BFGS step
+    6   -1626.2044792620      9.09e-06   Normal BFGS step
+    7   -1626.2044792629      4.52e-06   Normal BFGS step
+    8   -1626.2044792630      3.50e-06   Normal BFGS step
+    9   -1626.2044792630      6.22e-07   Normal BFGS step
+   10   -1626.2044792630      5.43e-07   Normal BFGS step
+   11   -1626.2044792630      1.67e-07   Normal BFGS step
+   12   -1626.2044792630      2.79e-07   Normal BFGS step
+   13   -1626.2044792630      3.50e-08   Normal BFGS step
+   14   -1626.2044792630      6.67e-08   Normal BFGS step
+   15   -1626.2044792630      2.77e-08   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.81e-09
+   16   -1626.2044792630      8.11e-08   Normal BFGS step
+   17   -1626.2044792630      1.15e-08   Normal BFGS step
+   18   -1626.2044792630      4.79e-09   Normal BFGS step
+   19   -1626.2044792630      4.79e-09  Convergence criterion met
+ NEO-SCF Cycles 4
+ Nuclear Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.2044792670      8.83e-05   Normal BFGS step
+    2   -1626.2044792759      2.96e-05   Normal BFGS step
+    3   -1626.2044792772      5.55e-06   Normal BFGS step
+    4   -1626.2044792772      8.59e-07   Normal BFGS step
+    5   -1626.2044792772      4.07e-07   Normal BFGS step
+    6   -1626.2044792772      5.63e-08   Normal BFGS step
+    7   -1626.2044792772      1.38e-08   Normal BFGS step
+    8   -1626.2044792772      1.84e-09   Normal BFGS step
+    9   -1626.2044792772      1.84e-09  Convergence criterion met
+ Electronic Block
+ ---------------------------------------
+  Cycle       Energy        RMS Gradient
+ ---------------------------------------
+    1   -1626.2044792780      1.94e-05   Normal BFGS step
+    2   -1626.2044792755      5.11e-05  Line search: overstep
+    3   -1626.2044792784      6.64e-06   Normal BFGS step
+    4   -1626.2044792784      3.29e-06   Normal BFGS step
+    5   -1626.2044792785      1.85e-06   Normal BFGS step
+    6   -1626.2044792785      6.94e-07   Normal BFGS step
+    7   -1626.2044792785      3.25e-07   Normal BFGS step
+    8   -1626.2044792785      2.56e-07   Normal BFGS step
+    9   -1626.2044792785      7.83e-08   Normal BFGS step
+   10   -1626.2044792785      1.09e-07   Normal BFGS step
+   11   -1626.2044792785      2.21e-08   Normal BFGS step
+   12   -1626.2044792785      1.98e-08   Normal BFGS step
+   13   -1626.2044792785      1.78e-08   Normal BFGS step
+   14   -1626.2044792785      4.84e-08   Normal BFGS step
+  GDM::WARNING energy changes are now smaller than effective accuracy.
+  GDM::        calculation will continue, but THRESH should be increased
+  GDM::        or SCF_CONVERGENCE decreased. 
+  GDM::        effective_thresh = 2.05e-09
+   15   -1626.2044792785      4.52e-09   Normal BFGS step
+   16   -1626.2044792785      4.52e-09  Convergence criterion met
+
+ E(NEO-SCF) = -1626.2044792785
+
+ E(NEO-SCF excluding KE quantum protons) = -1626.2118808574
+ NEO SCF time:       CPU 8228.04s  wall 283.77s 
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+-4.2959300 -4.2959284 -4.2929469 -4.2929150 -4.2918063 -4.2918038 -4.2916200 -4.2916182 
+-4.2762651 -4.2762645 -4.2757360 -4.2757353 -2.4386005 -2.4385971 -2.4373977 -2.4373977 
+-2.4332726 -2.4332723 -2.4311700 -2.4311643 -2.4290752 -2.4290729 -2.4248843 -2.4248832 
+-2.4235662 -2.4235662 -2.4227232 -2.4227231 -2.4191891 -2.4191890 -2.4162168 -2.4162166 
+-2.4157708 -2.4157708 -2.4151608 -2.4151608 -2.4146061 -2.4146057 -2.4140412 -2.4140410 
+-2.4094393 -2.4094392 -2.4088205 -2.4088205 -2.4015396 -2.4015395 -2.4010905 -2.4010904 
+-0.5492178 -0.5429732 -0.5310055 -0.5292417 -0.5291875 -0.5288303 -0.5043652 -0.5042324 
+-0.4884441 -0.4881456 -0.4870466 -0.4864295 -0.4809907 -0.4806065 -0.4779510 -0.4779452 
+-0.4649200 -0.4648824 -0.4636511 -0.4514459 -0.4514016 -0.4508163 -0.4503309 -0.4354526 
+-0.4354526 -0.4333799 -0.4323085 -0.4312942 -0.4304059 -0.4301456 -0.4289110 -0.4288178 
+-0.4263675 -0.4260994 -0.4260911 -0.4254187 -0.4216552 -0.4216536 -0.4209803 -0.4208499 
+-0.4142807 -0.4142644 -0.4140869 -0.4140697 -0.4103543 -0.4089805 -0.4059052 -0.4058973 
+-0.4028287 -0.4021538 -0.3989290 -0.3981378 -0.3978619 -0.3975818 -0.3964618 -0.3964269 
+-0.3950503 -0.3950499 -0.3932061 -0.3869256 -0.3857293 -0.3853150 -0.3847299 -0.3592663 
+-0.3592549 -0.3549736 
+  -- Virtual --
+-0.3105566 -0.2186459 -0.2177781 -0.2168841 -0.2161434 -0.2124383 -0.1728201 -0.1635766 
+-0.1609954 -0.1249624 -0.1200654 -0.1109097 -0.1070943 -0.1003698 -0.1002402 -0.0986662 
+-0.0980394 -0.0966145 -0.0927612 -0.0879371 -0.0540840 -0.0444987 -0.0375499 -0.0323813 
+-0.0315105 -0.0309060 -0.0294956 -0.0285648 -0.0270230 -0.0226179 -0.0202518 -0.0195353 
+-0.0186422 -0.0155939 -0.0153350 -0.0127695  0.0045270  0.0071713  0.0075493  0.0106180 
+ 0.0135523  0.0141676  0.0185683  0.0202087  0.0246729  0.0263667  0.0279755  0.0289037 
+ 0.0342411  0.0343813  0.0388318  0.0413421  0.0516556  0.0576303  0.0708958  0.0800201 
+ 0.0817318  0.0826869  0.0887473  0.0900886  0.0989597  0.1064603  0.1075448  0.1084654 
+ 0.1098301  0.1239646  0.1358746  0.1420848  0.1432858  0.1655697  0.1674268  0.1732020 
+ 0.1735037  0.2283794  0.2389528  0.2431308  0.2623762  0.2659813  0.2681050  0.2684923 
+ 0.2687517  0.2716168  0.2722926  0.2766220  0.2766378  0.2787488  0.2872174  0.2880516 
+ 0.2951665  0.3169609  0.3176516  0.3365725  0.3499026  0.3519288  0.3574501  0.3580020 
+ 0.3586607  0.3596834  0.3639116  0.3652355  0.3844644  0.3875340  0.3946488  0.4119052 
+ 0.4133969  0.4149601  0.4220021  0.4278850  0.4291194  0.4294388  0.4323656  0.4432161 
+ 0.4569573  0.4842880  0.4845780  0.4863848  0.4898044  0.4902055  0.5111968  0.5172617 
+ 0.5275128  0.5324377  0.5338259  0.5407331  0.5476566  0.5494850  0.5577323  0.5599016 
+ 0.5676158  0.5697692  0.5717645  0.6178817  0.6281943  0.6754501  0.6774529  0.6843029 
+ 0.6916985  0.7532718  0.7877108  0.8151880  0.8216104  0.8543715  0.8627340  1.1275554 
+ 1.7660847  1.7713826  1.8606604  1.9473418  1.9855502  2.1647760  2.1987641  2.3962617 
+ 4.7486165  4.8972597  5.5901828  5.6257168  5.6363457  5.6441588  5.6444169  5.6459987 
+ 5.6578155  5.6578198  6.1505003  6.7408510  6.8031886  6.8378995  7.3725884  7.3964696 
+ 7.4377064  7.6567804  7.6603278  7.7276590  7.7412149  7.7661433  7.8179340  8.9157773 
+ 9.2954028  9.8993057 10.1136329 10.3391521 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.7960 
+  -- Virtual --
+   -0.7860    -0.7859    -0.7858    -0.7741    -0.7738    -0.7736    -0.7730    -0.7729 
+   -0.7729    -0.7620    -0.7620    -0.7619    -0.7617    -0.7617    -0.7616    -0.7616 
+   -0.7552    -0.7551    -0.7549    -0.7408    -0.7405    -0.7385    -0.7384    -0.7383 
+   -0.7361    -0.7239    -0.7239    -0.7239    -0.7222    -0.7222    -0.7222    -0.7222 
+   -0.7217    -0.7215    -0.7209    -0.7030 
+ ---------------------------------------
+
+ ---------------------------------------
+ Electronic Orbital Energies (a.u.)
+ ---------------------------------------
+ Alpha MOs
+  -- Occupied --
+   -4.2959    -4.2959    -4.2929    -4.2929    -4.2918    -4.2918    -4.2916    -4.2916 
+   -4.2763    -4.2763    -4.2757    -4.2757    -2.4386    -2.4386    -2.4374    -2.4374 
+   -2.4333    -2.4333    -2.4312    -2.4312    -2.4291    -2.4291    -2.4249    -2.4249 
+   -2.4236    -2.4236    -2.4227    -2.4227    -2.4192    -2.4192    -2.4162    -2.4162 
+   -2.4158    -2.4158    -2.4152    -2.4152    -2.4146    -2.4146    -2.4140    -2.4140 
+   -2.4094    -2.4094    -2.4088    -2.4088    -2.4015    -2.4015    -2.4011    -2.4011 
+   -0.5492    -0.5430    -0.5310    -0.5292    -0.5292    -0.5288    -0.5044    -0.5042 
+   -0.4884    -0.4881    -0.4870    -0.4864    -0.4810    -0.4806    -0.4780    -0.4779 
+   -0.4649    -0.4649    -0.4637    -0.4514    -0.4514    -0.4508    -0.4503    -0.4355 
+   -0.4355    -0.4334    -0.4323    -0.4313    -0.4304    -0.4301    -0.4289    -0.4288 
+   -0.4264    -0.4261    -0.4261    -0.4254    -0.4217    -0.4217    -0.4210    -0.4208 
+   -0.4143    -0.4143    -0.4141    -0.4141    -0.4104    -0.4090    -0.4059    -0.4059 
+   -0.4028    -0.4022    -0.3989    -0.3981    -0.3979    -0.3976    -0.3965    -0.3964 
+   -0.3951    -0.3950    -0.3932    -0.3869    -0.3857    -0.3853    -0.3847    -0.3593 
+   -0.3593    -0.3550 
+  -- Virtual --
+   -0.3106    -0.2186    -0.2178    -0.2169    -0.2161    -0.2124    -0.1728    -0.1636 
+   -0.1610    -0.1250    -0.1201    -0.1109    -0.1071    -0.1004    -0.1002    -0.0987 
+   -0.0980    -0.0966    -0.0928    -0.0879    -0.0541    -0.0445    -0.0375    -0.0324 
+   -0.0315    -0.0309    -0.0295    -0.0286    -0.0270    -0.0226    -0.0203    -0.0195 
+   -0.0186    -0.0156    -0.0153    -0.0128     0.0045     0.0072     0.0075     0.0106 
+    0.0136     0.0142     0.0186     0.0202     0.0247     0.0264     0.0280     0.0289 
+    0.0342     0.0344     0.0388     0.0413     0.0517     0.0576     0.0709     0.0800 
+    0.0817     0.0827     0.0887     0.0901     0.0990     0.1065     0.1075     0.1085 
+    0.1098     0.1240     0.1359     0.1421     0.1433     0.1656     0.1674     0.1732 
+    0.1735     0.2284     0.2390     0.2431     0.2624     0.2660     0.2681     0.2685 
+    0.2688     0.2716     0.2723     0.2766     0.2766     0.2787     0.2872     0.2881 
+    0.2952     0.3170     0.3177     0.3366     0.3499     0.3519     0.3575     0.3580 
+    0.3587     0.3597     0.3639     0.3652     0.3845     0.3875     0.3946     0.4119 
+    0.4134     0.4150     0.4220     0.4279     0.4291     0.4294     0.4324     0.4432 
+    0.4570     0.4843     0.4846     0.4864     0.4898     0.4902     0.5112     0.5173 
+    0.5275     0.5324     0.5338     0.5407     0.5477     0.5495     0.5577     0.5599 
+    0.5676     0.5698     0.5718     0.6179     0.6282     0.6755     0.6775     0.6843 
+    0.6917     0.7533     0.7877     0.8152     0.8216     0.8544     0.8627     1.1276 
+    1.7661     1.7714     1.8607     1.9473     1.9856     2.1648     2.1988     2.3963 
+    4.7486     4.8973     5.5902     5.6257     5.6363     5.6442     5.6444     5.6460 
+    5.6578     5.6578     6.1505     6.7409     6.8032     6.8379     7.3726     7.3965 
+    7.4377     7.6568     7.6603     7.7277     7.7412     7.7661     7.8179     8.9158 
+    9.2954     9.8993    10.1136    10.3392 
+ ---------------------------------------
+ Nuclear Orbital Energies (a.u.)
+ ---------------------------------------
+  -- Occupied --
+   -0.7960 
+  -- Virtual --
+   -0.7860    -0.7859    -0.7858    -0.7741    -0.7738    -0.7736    -0.7730    -0.7729 
+   -0.7729    -0.7620    -0.7620    -0.7619    -0.7617    -0.7617    -0.7616    -0.7616 
+   -0.7552    -0.7551    -0.7549    -0.7408    -0.7405    -0.7385    -0.7384    -0.7383 
+   -0.7361    -0.7239    -0.7239    -0.7239    -0.7222    -0.7222    -0.7222    -0.7222 
+   -0.7217    -0.7215    -0.7209    -0.7030 
+ ---------------------------------------
+Expectation value of proton 0 : 0.00000000 0.00000000 0.00422392
+Protonic dipole moment: 
+Dx: 0.0000000 DY: 0.0000000 Dz: 0.0042239 au
+Electronic dipole moment: 
+Dx: -0.0000001 DY: -0.0000000 Dz: 0.0068063 au
+Total dipole moment: 
+Dx: -0.0000001 DY: -0.0000000 Dz: 0.0100465 Total 0.0100465 au
+Protonic quadrupole moment: 
+Qx: 0.0282117 QY: 0.0285699 Qz: 0.0284739 au
+
+Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      0                    0.379598
+      1                    -0.071763
+      2                    0.165375
+      3                    0.164713
+      4                    0.116053
+      5                    -0.032151
+      6                    -0.032026
+      7                    -0.071763
+      8                    0.165375
+      9                    0.164713
+      10                    0.116053
+      11                    -0.032151
+      12                    -0.032026
+----------------------------------------
+ Sum of atomic charges =   1.000000
+ 
+
+        *************************************************************
+        *                                                           *
+        *         Real-Time NEO TDDFT/Ehrenfest Calculations        *
+        *                    Programmed by Tao E. Li                *
+        *                                                           *
+        *************************************************************
+
+ Real-time simulation will be performed outside cavity!
+ Real time propagation threshold is 1.000000e-02
+ dt is 1.000000e-01 max_iter is 1.000000e+00
+ field amplitude is 0.000000e+00
+ field type is 0
+ field direction is 3
+ Apply hybrid HF/DFT calculation with xc kernel pbe_x and pbe_c
+ DFT contribution is 8.000000e-01
+ Apply EPC kernel epc172
+ ########### ----- Copying info from converged SCF ----- ###########
+ Exchange:     0.2000 Hartree-Fock + 0.0800 Slater + 0.7200 B88
+ Correlation:  0.1900 VWN1RPA + 0.8100 LYP
+ Using SG-1 standard quadrature grid
+ By default setting threshold to 1.000000e-12
+ Initializing Fock matrix...
+ Regenerating fundamental basis
+ E-field_direction is expected to have a size of 3 (like [0, 1, 0])
+ E-field_direction is expected to have a size of 3 (like [0, 1, 0])
+ Trying to build Fock matrix from density matrix...
+!## Warning: ECP core pseudopotential is only compatible with fixed nuclei ##!
+ End of building Fock matrix from density matrix...
+ New SCF energy is -1.626204479278e+03
+ Electronic fock matrix (alpha) max diff is 3.937591355405e-13
+ Protonic   fock matrix max diff is 3.345284845135e-05
+ The incoming field has direction of 
+1.000000000000e+00
+1.000000000000e+00
+1.000000000000e+00
+ Electric dipole moment value is    8.7270e-08   3.4051e-15  -6.8063e-03
+ Protonic dipole moment value is    1.0280e-09   8.2797e-16   4.2239e-03
+coordinates of all nuclei are 
+1.776529205369e-15 -4.157397474986e+00 -8.356368924722e+00 -8.356368924722e+00 -1.291249861208e+01 -1.273108490408e+01 -1.274053353471e+01 4.157397474986e+00 8.356368924722e+00 8.356368924722e+00 1.291249861208e+01 1.273108490408e+01 1.274053353471e+01
+2.429560624844e-30 2.307819199624e-15 4.638716591246e-15 4.638716591241e-15 7.167876632286e-15 7.067171794480e-15 7.072416838124e-15 -2.307819199624e-15 -4.638716591241e-15 -4.638716591246e-15 -7.167876632286e-15 -7.067171794488e-15 -7.072416838115e-15
+4.090092160945e-03 4.090092160945e-03 2.634588858152e+00 -2.628298399955e+00 4.090092160946e-03 -4.958330712072e+00 4.943834182894e+00 4.090092160945e-03 2.634588858152e+00 -2.628298399955e+00 4.090092160945e-03 -4.958330712072e+00 4.943834182894e+00
+ indexes of quantum protons are
+        0
+ indexes of classical nuclei are
+         1
+         2
+         3
+         4
+         5
+         6
+         7
+         8
+         9
+        10
+        11
+        12
+ 0-th atom's atomic number is 1
+ 1-th atom's atomic number is 19
+ 2-th atom's atomic number is 19
+ 3-th atom's atomic number is 19
+ 4-th atom's atomic number is 19
+ 5-th atom's atomic number is 19
+ 6-th atom's atomic number is 19
+ 7-th atom's atomic number is 19
+ 8-th atom's atomic number is 19
+ 9-th atom's atomic number is 19
+ 10-th atom's atomic number is 19
+ 11-th atom's atomic number is 19
+ 12-th atom's atomic number is 19
+ 0-th atom's mass is 1.836152673890e+03
+ 1-th atom's mass is 7.102649828913e+04
+ 2-th atom's mass is 7.102649828913e+04
+ 3-th atom's mass is 7.102649828913e+04
+ 4-th atom's mass is 7.102649828913e+04
+ 5-th atom's mass is 7.102649828913e+04
+ 6-th atom's mass is 7.102649828913e+04
+ 7-th atom's mass is 7.102649828913e+04
+ 8-th atom's mass is 7.102649828913e+04
+ 9-th atom's mass is 7.102649828913e+04
+ 10-th atom's mass is 7.102649828913e+04
+ 11-th atom's mass is 7.102649828913e+04
+ 12-th atom's mass is 7.102649828913e+04
+ The mass matrix of all nuclei is
+   1.8362e+03   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04
+   1.8362e+03   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04
+   1.8362e+03   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04   7.1026e+04
+ The shift between the basis function center and proton expectation value is   -1.0280e-09  -8.2797e-16  -1.3383e-04
+
+# Running Restricted Simulation #
+In Restricted RT simulation, Rebuild Fock matrix
+!## Warning: ECP core pseudopotential is only compatible with fixed nuclei ##!
+ In NEO-Eh dt = 1.000000000000e-01
+ +++--- Updating basis function center takes 5.356613500000e-02 seconds. ---+++
+## OUTPUT TO NGRID = 80 WITH BOUNDARY -1.000000000000e+01 TO 1.000000000000e+01
+
+ ### --- Starting time step No.1 --- ###
+ --- Within this time step, building Kohn-Sham matrices No.1 ---
+!## Warning: ECP core pseudopotential is only compatible with fixed nuclei ##!
+ +++--- Building Fock matrices takes 2.429022693000e+00 seconds. ---+++
+ --- Within this time step, building Kohn-Sham matrices No.2 for better convergence ---
+!## Warning: ECP core pseudopotential is only compatible with fixed nuclei ##!
+ --- Within this time step, building Kohn-Sham matrices No.3 for better convergence ---
+!## Warning: ECP core pseudopotential is only compatible with fixed nuclei ##!
+ Time step 1 mu_e is -8.728533662516e-08 1.838224545653e-15 6.806270280972e-03
+ Time step 1 mu_n is 1.028047422871e-09 8.071559601818e-16 4.223920194251e-03
+ Time step 1 mu_classical is -1.421085471520e-13 -1.262177448354e-28 -9.836930513387e-04
+ Time step 1 mu_tot is -8.625743131084e-08 2.645380505835e-15 1.004649742388e-02
+ Time step 1 e_tot(electrons+protons) is -1.626204479278e+03
+ Time step 1 e_kin(classical) is 0.000000000000e+00
+ Time step 1 e_conserved is -1.626204479278e+03
+ Time step 1 e_kin(quantum) is 0.000000000000e+00
+ Time step 1 e_kin(qmclcross) is 0.000000000000e+00
+ Time step 1 e_kin(qmqm) is 0.000000000000e+00
+ Time step 1 e_kin(qmqm2) is 0.000000000000e+00
+ Time step 1 e_tau is 0.000000000000e+00
+ Examining the quality of density matrices by calculating Abs(P - P^dagger)
+ Max diff: Displayed in the order of Pe.real,  Pe.imag,  Pn.real,  Pn.imag (less is better)
+ Max diff: 2.764585088633e-10 1.762437558269e-09 1.326716514427e-14 1.451231554362e-14
+ +++--- Updating quantum densities for one step takes 7.775895395000e+00 seconds. ---+++
+ ### Reaching maximal steps, quitting... ###
+ Total job time:  435.32s(wall), 12413.46s(cpu) 
+ Fri Aug  4 08:41:12 2023
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+

@@ -1,0 +1,34 @@
+
+$rem
+jobtype = sp
+sym_ignore = false
+input_bohr = false
+method = b3lyp
+SCF_ALGORITHM = GDM
+MAX_SCF_CYCLES=500
+SCF_CONVERGENCE = 8
+MEM_TOTAL = 100000 
+ECP = fit-LANL2DZ
+basis = general
+IANLTY     200
+ESP_GRID     -1
+$end
+
+
+$basis
+   H 0
+   def2-qzvp
+   ****
+   Au 0
+   LANL2DZ
+   ****
+$end
+
+$plots
+   plot the electrostatic potential on a line
+   14001   -7.0   7.0
+   1   0.0   0.0
+   1   0.0   0.0
+   0  0  0  0
+   0
+$end

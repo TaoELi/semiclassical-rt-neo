@@ -1,0 +1,3 @@
+This is a multi-thread run using 32 threads
+/home/tl686/qchem_dev/qchem/exe/qcprog.exe .hfau2n.in.80801.qcin.1 /home/tl686/palmer_scratch/qchem_dev/scratch/qchem80801/
+slurmstepd: error: *** JOB 21565964 ON p09r06n37 CANCELLED AT 2023-06-18T20:37:28 DUE TO TIME LIMIT ***

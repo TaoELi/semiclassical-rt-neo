@@ -236,7 +236,8 @@ exc_lst = np.array([0.6032] * len(N_lst))
 dt = xs_n[0][1] - xs_n[0][0]
 nmax = int(27.0 // dt)
 print("nmax = ", nmax)
-osc_n_lst = np.array([np.max(y[:nmax]) for y in ys_n])
+# ys_n has been increased by 1e4 before, and now we need to reduce it
+osc_n_lst = np.array([np.max(y[:nmax])*1e-4 for y in ys_n])
 
 xs = [np.flip(pla_lst)]
 ys = [osc_n_lst]

@@ -20,7 +20,9 @@ The folders here contain all necessary files to generate figures in the followin
   6. **rerun_largebasis_d3/** Folder for simulations with PBE/6-31G(d,p) + D3 correction for both RT-NEO-TDDFT and conventional RT-Ehrenfest calculations.
 
   7. **rerun_largebasis_dp/** Folder for simulations with PBE/6-31G(d,p) for both RT-NEO-TDDFT and conventional RT-Ehrenfest calculations.
+  
+  8. **rerun_largebasis_d3_updated/** Folder for simulations with PBE/6-31G(d,p) + D3 correction for both RT-NEO-TDDFT and conventional RT-Ehrenfest calculations. The data in the folder **rerun_largebasis_d3/** was reported as Fig. S16 in the SI. A small bug was recently detected in the code for the D3 correction, and the updated results were updated here. There is no meaningful difference between the results in **rerun_largebasis_d3/** and **rerun_largebasis_d3_updated/**.
 
 ## Caution
 
-The simulations are performed in a developer version of Q-Chem. The current release version of Q-Chem does not support BO-RT-NEO simulations. 
+The simulations are performed in a developer version of Q-Chem. The current release version of Q-Chem may not support RT-NEO simulations. 

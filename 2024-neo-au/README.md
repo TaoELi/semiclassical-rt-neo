@@ -6,7 +6,7 @@ The folders here contain all necessary files to generate figures in the followin
 
 ## File structure
 
-  1. **plotting/** There are several python scripts (ending with **.py**) in this folder. Enter this folder, try running each of them (by **python xxx.py**) to obtain all the figures in the manuscript.
+  1. **plotting/** There are several python scripts (ending with **.py**) in this folder. Enter this folder, try to run each of them (by **python xxx.py**) to obtain all the figures in the manuscript.
   
   2. **data_proton_squeezing/** Folder for calculating proton squeezing near a gold tip.
 

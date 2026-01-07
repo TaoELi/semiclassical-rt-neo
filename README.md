@@ -20,6 +20,6 @@ All the necessary input or post-processing files for reproducing the following p
 
 **20245-rtneo-energy/**
 
-- Li, T. E., Li, X.,  Hammes-Schiffer, S. Energy Conservation in Real-Time Nuclear-Electronic Orbital Ehrenfest Dynamics. [J. Chem. Phys. **2025**, 162, 144106]
+- Li, T. E., Li, X.,  Hammes-Schiffer, S. Energy Conservation in Real-Time Nuclear-Electronic Orbital Ehrenfest Dynamics. [J. Chem. Phys. **2025**, 162, 144106](https://doi.org/10.1063/5.0255984)
 
 Note that the current project is implemented in a developer version of Q-Chem, which has not been merged to the Q-Chem trunk, so **the current release version of Q-Chem does not support the input files in this project**. However, the necessary output data are given, so one can easily reproduce the figures in the publication by running the Python script of plotting. I anticipate the features presented in this project will be merged to the Q-Chem trunk in the near future.

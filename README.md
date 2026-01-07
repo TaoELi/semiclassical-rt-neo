@@ -22,4 +22,5 @@ All the necessary input or post-processing files for reproducing the following p
 
 - Li, T. E., Li, X.,  Hammes-Schiffer, S. Energy Conservation in Real-Time Nuclear-Electronic Orbital Ehrenfest Dynamics. [J. Chem. Phys. **2025**, 162, 144106](https://doi.org/10.1063/5.0255984)
 
-Note that the current project is implemented in a developer version of Q-Chem, which has not been merged to the Q-Chem trunk, so **the current release version of Q-Chem does not support the input files in this project**. However, the necessary output data are given, so one can easily reproduce the figures in the publication by running the Python script of plotting. I anticipate the features presented in this project will be merged to the Q-Chem trunk in the near future.
+
+The above input files rely on a developer version of Q-Chem (**libneo/branches/tl_dev**), which can be accessed by Q-Chem developers. As of today, The official release Q-Chem 6.2+ supports the real-time NEO-TDDFT and real-time NEO-Ehrenfest features, but the provided input files here might need to be adjusted accordingly. Users should always check the offical Q-Chem manual if they want to use the official version of Q-Chem to reproduce some of the above results. 

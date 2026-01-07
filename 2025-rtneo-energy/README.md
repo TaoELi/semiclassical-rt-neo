@@ -2,7 +2,7 @@
 
 The folders here contain all necessary files to generate figures in the following paper:
 
-- - Li, T. E., Li, X.,  Hammes-Schiffer, S. Energy Conservation in Real-Time Nuclear-Electronic Orbital Ehrenfest Dynamics. Submitted. **2025**
+- - Li, T. E., Li, X.,  Hammes-Schiffer, S. Energy Conservation in Real-Time Nuclear-Electronic Orbital Ehrenfest Dynamics. [J. Chem. Phys. **2025**, 162, 144106](https://doi.org/10.1063/5.0255984)
 
 ## File structure
 
